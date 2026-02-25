@@ -100,7 +100,7 @@ export default function Footer() {
             <p className="text-white text-xs font-semibold uppercase tracking-widest mb-5">Company</p>
             <ul className="space-y-3 text-sm">
               <li><a href="/about/" className="text-gray-500 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/resources/blog/" className="text-gray-500 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/resources/" className="text-gray-500 hover:text-white transition-colors">Resources</a></li>
               <li><a href="/ask/" className="text-gray-500 hover:text-white transition-colors">Ask DiamondLinks</a></li>
               <li><a href="/request-a-quote/" className="text-gray-500 hover:text-white transition-colors">Request A Quote</a></li>
               <li><a href="/contact/" className="text-gray-500 hover:text-white transition-colors">Contact Us</a></li>

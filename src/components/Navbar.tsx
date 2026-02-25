@@ -37,7 +37,7 @@ const solutions = [
 
 const secondaryLinks = [
   { href: '/who-we-serve/', label: 'Who We Serve' },
-  { href: '/resources/blog/', label: 'Blog' },
+  { href: '/resources/', label: 'Resources' },
   { href: '/about/', label: 'About' },
 ]
 

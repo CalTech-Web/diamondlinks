@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/who-we-serve/', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/ask/', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/resources/', priority: 0.6, changeFrequency: 'monthly' as const },
-    { path: '/resources/blog/', priority: 0.5, changeFrequency: 'weekly' as const },
     { path: '/privacy-policy/', priority: 0.3, changeFrequency: 'yearly' as const },
     { path: '/terms-of-service/', priority: 0.3, changeFrequency: 'yearly' as const },
     { path: '/industries/', priority: 0.8, changeFrequency: 'monthly' as const },
