@@ -23,14 +23,14 @@ export default function RequestAQuotePage() {
       />
 
       {/* Analyzer Section */}
-      <section id="analyzer" className="py-20 px-6 bg-white">
+      <section id="analyzer" className="pt-16 pb-8 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <ReputationAnalyzer />
         </div>
       </section>
 
       {/* Conversion Strip */}
-      <section className="py-4 px-6 bg-white">
+      <section className="py-4 pb-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <ConversionStrip
             headline="Want the full deep-dive analysis?"

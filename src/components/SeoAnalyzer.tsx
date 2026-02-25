@@ -334,7 +334,7 @@ function CategoryCard({ category, expanded, onToggle }: { category: AuditCategor
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between mb-1.5">
             <h3 className="text-gray-900 font-bold text-sm">{category.name}</h3>
-            <span className={`text-lg font-black ${scoreColor}`}>{category.score}</span>
+            <span className={`text-xl font-black tabular-nums ${scoreColor}`}>{category.score}</span>
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
             <div
@@ -698,8 +698,8 @@ export default function SeoAnalyzer() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
                     </svg>
                     <div>
-                      <p className="text-amber-800 font-semibold text-sm">Significant SEO Issues Detected</p>
-                      <p className="text-amber-700 text-xs mt-0.5">
+                      <p className="text-amber-900 font-semibold text-sm">Significant SEO Issues Detected</p>
+                      <p className="text-amber-800 text-sm mt-0.5">
                         Your site has critical optimization gaps that are likely costing you organic traffic and rankings.
                       </p>
                     </div>
