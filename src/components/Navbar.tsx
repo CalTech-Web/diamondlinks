@@ -181,7 +181,7 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTAs */}
-        <div className="hidden md:flex items-center gap-3 flex-shrink-0">
+        <div className="hidden md:flex items-center gap-2 flex-shrink-0">
           <a
             href="tel:504-233-4365"
             className="text-gray-600 text-sm font-medium hover:text-blue-600 transition-colors flex items-center gap-1.5"
@@ -193,9 +193,15 @@ export default function Navbar() {
           </a>
           <a
             href="/request-a-quote/"
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors shadow-sm shadow-blue-600/20"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/20"
           >
-            Free Analysis →
+            ORM Scan
+          </a>
+          <a
+            href="/seo-analysis/"
+            className="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-500 transition-colors shadow-sm shadow-indigo-600/20"
+          >
+            SEO Audit
           </a>
         </div>
 
