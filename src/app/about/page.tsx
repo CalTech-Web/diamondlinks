@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import ScrollReveal from '@/components/ScrollReveal'
 import PageHero from '@/components/sections/PageHero'
 import SectionHeader from '@/components/sections/SectionHeader'
@@ -171,9 +172,13 @@ export default function AboutPage() {
             {/* Brandon */}
             <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
-                  BH
-                </div>
+                <Image
+                  src="/brandon-hopkins.jpg"
+                  alt="Brandon Hopkins, Founder & CEO of DiamondLinks"
+                  width={56}
+                  height={56}
+                  className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+                />
                 <div>
                   <p className="text-gray-900 font-bold text-lg">{company.founderName}</p>
                   <p className="text-gray-500 text-sm">{company.founderTitle}</p>
@@ -204,9 +209,13 @@ export default function AboutPage() {
             {/* Hilary */}
             <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
-                  HS
-                </div>
+                <Image
+                  src="/hilary-spross.jpg"
+                  alt="Hilary Spross, President of DiamondLinks"
+                  width={56}
+                  height={56}
+                  className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+                />
                 <div>
                   <p className="text-gray-900 font-bold text-lg">{company.presidentName}</p>
                   <p className="text-gray-500 text-sm">{company.presidentTitle}</p>
@@ -229,6 +238,76 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team Section */}
+      <section className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-blue-400 text-sm font-semibold uppercase tracking-widest mb-2 text-center">Our Team</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            The People Behind Your Results
+          </h2>
+          <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto text-center mb-12">
+            DiamondLinks is powered by a full-time, US-based team of specialists — not freelancers, not offshore contractors. Every campaign is backed by dedicated professionals who live and breathe ORM and SEO.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {[
+              {
+                icon: 'M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z',
+                stat: '10+',
+                label: 'Full-Time Specialists',
+              },
+              {
+                icon: 'M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418',
+                stat: '100%',
+                label: 'US-Based Team',
+              },
+              {
+                icon: 'M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5',
+                stat: '100+',
+                label: 'Years Combined Experience',
+              },
+              {
+                icon: 'M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z',
+                stat: '6',
+                label: 'Specialized Departments',
+              },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="bg-gray-800/50 border border-gray-700 rounded-2xl p-6 text-center hover:border-blue-500/30 transition-all"
+              >
+                <div className="w-12 h-12 rounded-xl bg-blue-600/10 flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                  </svg>
+                </div>
+                <p className="text-3xl font-bold text-white mb-1">{item.stat}</p>
+                <p className="text-gray-400 text-sm">{item.label}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { dept: 'Content & Strategy', desc: 'Writers, editors, and strategists crafting high-authority content tailored to each client.' },
+              { dept: 'SEO & Link Building', desc: 'Technical SEO specialists and outreach experts building authoritative backlink profiles.' },
+              { dept: 'Reputation Management', desc: 'Dedicated ORM analysts monitoring, suppressing, and shaping search results around the clock.' },
+              { dept: 'Client Success', desc: 'Account managers ensuring clear communication, transparent reporting, and measurable results.' },
+              { dept: 'Data & Analytics', desc: 'Analysts tracking performance metrics and turning raw data into actionable insights.' },
+              { dept: 'Development & AI', desc: 'Engineers building proprietary tools and AI-powered workflows that give our clients an edge.' },
+            ].map((dept) => (
+              <div
+                key={dept.dept}
+                className="bg-gray-800/30 border border-gray-700/50 rounded-xl p-5 hover:border-gray-600 transition-all"
+              >
+                <p className="text-white font-semibold mb-1">{dept.dept}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{dept.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
