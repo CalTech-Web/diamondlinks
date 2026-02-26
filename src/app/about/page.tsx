@@ -13,11 +13,11 @@ import { company, testimonials } from '@/data/company'
 export const metadata: Metadata = {
   title: 'About DiamondLinks | ORM & SEO Agency Since 2011',
   description:
-    'DiamondLinks is a New Orleans-based ORM & SEO agency founded in 2011 by Brandon Hopkins. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
+    'DiamondLinks is an ORM & SEO agency founded in California in 2011 by Brandon Hopkins, now headquartered in New Orleans. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
   alternates: { canonical: 'https://diamondlinks.com/about/' },
   openGraph: {
     title: 'About DiamondLinks | ORM & SEO Agency Since 2011',
-    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency founded in 2011 by Brandon Hopkins. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
+    description: 'DiamondLinks is an ORM & SEO agency founded in California in 2011 by Brandon Hopkins, now headquartered in New Orleans. With 30+ years of combined expertise, we specialize exclusively in online reputation management.',
     url: 'https://diamondlinks.com/about/',
   },
 }
@@ -58,8 +58,8 @@ const differentiatorFeatures = [
 const timeline = [
   {
     phase: '2011',
-    title: 'Founded in New Orleans',
-    description: 'Brandon Hopkins launches DiamondLinks with a singular focus on online reputation management.',
+    title: 'Founded in California',
+    description: 'Brandon Hopkins launches DiamondLinks in California with a singular focus on online reputation management.',
   },
   {
     phase: '2012–2013',
@@ -77,7 +77,12 @@ const timeline = [
     description: 'Launched a white-label ORM and SEO program, enabling marketing agencies to offer reputation services under their own brand.',
   },
   {
-    phase: '2021–Present',
+    phase: '2021',
+    title: 'Headquartered in New Orleans',
+    description: 'Relocated headquarters to New Orleans, Louisiana, establishing a home base while continuing to serve clients nationwide.',
+  },
+  {
+    phase: '2022–Present',
     title: 'Nationwide Client Base',
     description: 'Serving clients across every major industry, from solo professionals to national brands, with a 5.0 verified rating.',
   },
@@ -91,7 +96,7 @@ const personSchema = {
   "jobTitle": "Founder & CEO",
   "worksFor": { "@id": "https://diamondlinks.com/#organization" },
   "url": "https://diamondlinks.com/about/",
-  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, a New Orleans-based ORM & SEO agency he founded in 2011. With two successful business exits and 17+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
+  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, an ORM & SEO agency he founded in California in 2011, now headquartered in New Orleans. With two successful business exits and 17+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
   "knowsAbout": [
     "Online Reputation Management",
     "Search Engine Optimization",
@@ -185,7 +190,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Brandon founded DiamondLinks in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. With two successful exits and 17+ years in the reputation management industry, he brings operational discipline and deep ORM expertise to every engagement.
+                Brandon founded DiamondLinks in California in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. Now headquartered in New Orleans, the company serves clients nationwide. With two successful exits and 17+ years in the reputation management industry, he brings operational discipline and deep ORM expertise to every engagement.
               </p>
               <blockquote className="text-gray-600 italic leading-relaxed border-l-2 border-blue-200 pl-5 text-sm">
                 &ldquo;Your online reputation is the first impression you never get to make in person. We exist to make sure the story people find is the real one.&rdquo;
