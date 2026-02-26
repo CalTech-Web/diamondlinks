@@ -1,4 +1,4 @@
-import { SubPageData, ormSubPages, seoSubPages } from '@/data/services'
+import { SubPageData, ormSubPages, seoSubPages, serviceSubPages } from '@/data/services'
 import PageHero from '@/components/sections/PageHero'
 import SectionHeader from '@/components/sections/SectionHeader'
 import FeatureGrid from '@/components/sections/FeatureGrid'
@@ -7,12 +7,14 @@ import ConversionStrip from '@/components/sections/ConversionStrip'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export default function ServiceSubPage({ data }: { data: SubPageData }) {
-  const allSiblings = data.category === 'orm' ? ormSubPages : seoSubPages
+  const allSiblings = data.category === 'orm' ? ormSubPages : data.category === 'seo' ? seoSubPages : serviceSubPages
   const relatedPages = allSiblings.filter((p) => p.slug !== data.slug).slice(0, 3)
-  const parentLabel = data.category === 'orm' ? 'Online Reputation Management' : 'SEO Services'
+  const parentLabel = data.category === 'orm' ? 'Online Reputation Management' : data.category === 'seo' ? 'SEO Services' : 'Our Services'
   const parentHref = data.category === 'orm'
     ? '/solutions/online-reputation-management/'
-    : '/solutions/seo/'
+    : data.category === 'seo'
+      ? '/solutions/seo/'
+      : '/services/'
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -34,7 +36,7 @@ export default function ServiceSubPage({ data }: { data: SubPageData }) {
     "description": data.description,
     "provider": { "@id": "https://diamondlinks.com/#organization" },
     "areaServed": { "@type": "Country", "name": "United States" },
-    "url": `https://diamondlinks.com/${data.slug}/`,
+    "url": data.category === 'services' ? `https://diamondlinks.com/services/${data.slug}/` : `https://diamondlinks.com/${data.slug}/`,
   }
 
   const breadcrumbSchema = {
@@ -43,7 +45,7 @@ export default function ServiceSubPage({ data }: { data: SubPageData }) {
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondlinks.com/" },
       { "@type": "ListItem", "position": 2, "name": parentLabel, "item": `https://diamondlinks.com${parentHref}` },
-      { "@type": "ListItem", "position": 3, "name": data.title, "item": `https://diamondlinks.com/${data.slug}/` },
+      { "@type": "ListItem", "position": 3, "name": data.title, "item": data.category === 'services' ? `https://diamondlinks.com/services/${data.slug}/` : `https://diamondlinks.com/${data.slug}/` },
     ],
   }
 
@@ -157,7 +159,7 @@ export default function ServiceSubPage({ data }: { data: SubPageData }) {
               {relatedPages.map((page) => (
                 <a
                   key={page.slug}
-                  href={`/${page.slug}/`}
+                  href={data.category === 'services' ? `/services/${page.slug}/` : `/${page.slug}/`}
                   className="group bg-white rounded-2xl border border-gray-100 p-6 hover:border-blue-200 hover:bg-blue-50/30 transition-all"
                 >
                   <h3 className="text-gray-900 font-semibold mb-2 group-hover:text-blue-600 transition-colors">

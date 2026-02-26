@@ -24,26 +24,32 @@ const reviewSchema = {
   "review": [
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Narin C." },
-      "reviewBody": "Having a positive online reputation is vital to any business. Without the online reputation management experience DiamondLinks possesses, there's no telling where we would be today.",
+      "author": { "@type": "Organization", "name": "Inspect & Track" },
+      "reviewBody": "DiamondLinks transformed our online presence. Their strategic approach to content and backlinks gave us visibility we never thought possible.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
     },
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Rusty T." },
-      "reviewBody": "DiamondLinks was a lifesaver. Finance can be a messy industry, and I feel confident continuing in it by having DiamondLinks manage my online reputation.",
+      "author": { "@type": "Organization", "name": "Keyfactor" },
+      "reviewBody": "The team at DiamondLinks understood our complex B2B landscape and delivered SEO results that directly impacted our pipeline.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
     },
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Richart R." },
-      "reviewBody": "Brandon and team definitely know what they are doing. From SEO to reputation management they are a great asset and help to our growing list of companies.",
+      "author": { "@type": "Organization", "name": "Condominium Comeback" },
+      "reviewBody": "After a reputation crisis, DiamondLinks rebuilt our online presence from the ground up. The turnaround was remarkable.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
     },
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": "Reed G." },
-      "reviewBody": "Brandon Hopkins, the brain behind our SEO strategy. He's done a great job for us and has been key in driving our ranking up along with ranking our content.",
+      "author": { "@type": "Organization", "name": "Mannington Commercial" },
+      "reviewBody": "DiamondLinks delivered a comprehensive SEO strategy that elevated our brand visibility across every major search term in our industry.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Organization", "name": "Flight Providers" },
+      "reviewBody": "Working with DiamondLinks gave us the competitive edge we needed. Their data-driven approach and transparent reporting set them apart.",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
     },
   ],
@@ -146,13 +152,13 @@ export default function Home() {
           {/* Left: Copy */}
           <div>
             {/* Eyebrow pill */}
-            <div className="hero-entrance hero-entrance-d1 hero-eyebrow-glow inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+            <div className="hero-eyebrow-glow inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
-              Online Reputation Management &amp; SEO
+              SEO &amp; Online Reputation Management
             </div>
 
-            <h1 className="hero-entrance hero-entrance-d2 text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
-              Are you happy with<br />{" "}
+            <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
+              Powered by People,<br />{" "}
               <span
                 style={{
                   background: "linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #a78bfa 100%)",
@@ -161,16 +167,15 @@ export default function Home() {
                   backgroundClip: "text",
                 }}
               >
-                your search results?
+                Perfected with AI
               </span>
             </h1>
 
-            <p className="hero-entrance hero-entrance-d3 text-gray-300 text-lg md:text-xl mb-10 leading-relaxed max-w-lg">
-              We suppress negative content, amplify positive stories, and drive lasting SEO growth —
-              so your brand owns its search results.
+            <p className="text-gray-300 text-lg md:text-xl mb-10 leading-relaxed max-w-lg">
+              Our US-based team builds true recovery, visibility, and reputation through powerful SEO and ORM campaigns — built on proven best practices and elevated by data-driven insights.
             </p>
 
-            <div className="hero-entrance hero-entrance-d4 flex flex-wrap gap-4 mb-4">
+            <div className="flex flex-wrap gap-4 mb-4">
               <a
                 href="/free-orm-scan/"
                 className="hero-cta-shimmer inline-flex items-center gap-2.5 bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/35 text-base"
@@ -189,7 +194,7 @@ export default function Home() {
             </div>
 
             {/* Micro trust strip below CTAs */}
-            <div className="hero-entrance hero-entrance-d5 flex flex-wrap items-center gap-x-5 gap-y-1.5 mb-7 text-gray-500 text-xs">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mb-7 text-gray-500 text-xs">
               <span className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block flex-shrink-0" />
                 Response within 24 hours
@@ -643,7 +648,7 @@ export default function Home() {
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5 leading-tight">
-              ORM Specialists Since 2011.{" "}
+              Human Expertise.{" "}
               <span
                 style={{
                   background: "linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)",
@@ -652,15 +657,15 @@ export default function Home() {
                   backgroundClip: "text",
                 }}
               >
-                Not Generalists.
+                AI-Powered Results.
               </span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
-              DiamondLinks is a dedicated Online Reputation Management and SEO agency, built from the ground up to do one thing exceptionally well: fix and protect what prospects find when they Google you.
+              DiamondLinks blends a US-based team of seasoned SEO and ORM professionals with cutting-edge AI tools to deliver campaigns that actually move the needle — faster and smarter.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
-              With 30+ years of combined expertise and 15+ years in business, we&apos;ve helped executives, brands, and agencies nationwide take back control of their search presence. Our results-first philosophy means we don&apos;t stop until the work is done.
+              With 17+ years in business and a proven track record across every major industry, we&apos;ve helped executives, brands, and agencies nationwide build true recovery, visibility, and reputation through data-driven strategy.
             </p>
 
             {/* Key differentiators */}

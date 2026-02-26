@@ -18,7 +18,7 @@ export default function StickyCtaBar() {
       className={`fixed bottom-0 left-0 right-0 z-50 transition-transform duration-300 ease-out ${
         show && !dismissed ? 'translate-y-0' : 'translate-y-full'
       }`}
-      aria-hidden={!show || dismissed}
+      inert={!show || dismissed ? true : undefined}
     >
       {/* Gradient top accent line */}
       <div
@@ -54,7 +54,7 @@ export default function StickyCtaBar() {
               <p className="text-white text-sm font-semibold leading-none mb-0.5">
                 Take control of your online reputation
               </p>
-              <p className="text-gray-500 text-xs truncate">
+              <p className="text-gray-400 text-xs truncate">
                 Free analysis · No commitment · Proven results
               </p>
             </div>

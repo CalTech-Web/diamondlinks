@@ -56,10 +56,10 @@ export default function Footer() {
           {/* Brand column — spans 2 */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-3">
-              <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} className="h-7 w-auto brightness-0 invert" />
+              <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} sizes="120px" className="h-7 w-auto brightness-0 invert" />
             </a>
             <p className="text-sm text-gray-500 mb-7 leading-relaxed max-w-xs">
-              New Orleans-based ORM &amp; SEO agency with 30+ years of combined expertise. We help brands take control of their online narrative and protect what matters most.
+              DiamondLinks blends human expertise with AI to deliver SEO and ORM that actually work. Powered by people, perfected with AI.
             </p>
             {/* Contact details */}
             <div className="space-y-2 text-sm">
@@ -76,6 +76,12 @@ export default function Footer() {
                 </svg>
                 <a href="tel:504-233-4365" className="text-gray-400 hover:text-white transition-colors">504.233.4365</a>
               </div>
+              <div className="flex items-center gap-2.5">
+                <svg className="w-4 h-4 text-gray-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <a href="mailto:sales@diamondlinks.com" className="text-gray-400 hover:text-white transition-colors">sales@diamondlinks.com</a>
+              </div>
             </div>
           </div>
 
@@ -87,6 +93,7 @@ export default function Footer() {
               <li><a href="/solutions/seo/" className="text-gray-500 hover:text-white transition-colors">Search Engine Optimization</a></li>
               <li><a href="/solutions/white-label-reputation-management/" className="text-gray-500 hover:text-white transition-colors">White Label ORM</a></li>
               <li><a href="/solutions/white-label-seo/" className="text-gray-500 hover:text-white transition-colors">White Label SEO</a></li>
+              <li><a href="/services/" className="text-gray-500 hover:text-white transition-colors">All Services</a></li>
             </ul>
           </div>
 
@@ -108,10 +115,12 @@ export default function Footer() {
             <p className="text-white text-xs font-semibold uppercase tracking-widest mb-5">Company</p>
             <ul className="space-y-3 text-sm">
               <li><a href="/about/" className="text-gray-500 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/case-studies/" className="text-gray-500 hover:text-white transition-colors">Case Studies</a></li>
               <li><a href="/resources/" className="text-gray-500 hover:text-white transition-colors">Resources</a></li>
               <li><a href="/ask/" className="text-gray-500 hover:text-white transition-colors">Ask DiamondLinks</a></li>
               <li><a href="/free-orm-scan/" className="text-gray-500 hover:text-white transition-colors">Free ORM Scan</a></li>
               <li><a href="/free-seo-audit/" className="text-gray-500 hover:text-white transition-colors">Free SEO Audit</a></li>
+              <li><a href="/request-a-quote/" className="text-gray-500 hover:text-white transition-colors">Request a Quote</a></li>
               <li><a href="/contact/" className="text-gray-500 hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>

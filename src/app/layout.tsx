@@ -45,7 +45,7 @@ const organizationSchema = {
         "@type": "ImageObject",
         "url": "https://diamondlinks.com/icon.png",
       },
-      "description": "DiamondLinks is a New Orleans-based ORM & SEO agency founded in 2011. We suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.",
+      "description": "DiamondLinks is a New Orleans-based SEO & ORM agency founded in 2011. Powered by people and perfected with AI, we build true recovery, visibility, and reputation through proven SEO and ORM campaigns.",
       "foundingDate": "2011",
       "telephone": "+15042334365",
       "address": {
@@ -62,7 +62,7 @@ const organizationSchema = {
         "ratingValue": "5.0",
         "bestRating": "5",
         "worstRating": "1",
-        "reviewCount": "4",
+        "reviewCount": "5",
       },
       "serviceArea": {
         "@type": "Country",
@@ -102,6 +102,38 @@ const organizationSchema = {
               "@type": "Service",
               "name": "White Label SEO",
               "url": "https://diamondlinks.com/solutions/white-label-seo/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Content Strategy & Development",
+              "url": "https://diamondlinks.com/services/content-strategy/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Premium Backlink Outreach",
+              "url": "https://diamondlinks.com/services/premium-backlink-outreach/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technical SEO Audits",
+              "url": "https://diamondlinks.com/services/technical-seo-audits/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Local Search Optimization",
+              "url": "https://diamondlinks.com/services/local-search-optimization/",
             },
           },
         ],

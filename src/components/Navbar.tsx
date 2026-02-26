@@ -37,6 +37,7 @@ const solutions = [
 ]
 
 const secondaryLinks = [
+  { href: '/services/', label: 'Services' },
   { href: '/who-we-serve/', label: 'Who We Serve' },
   { href: '/resources/', label: 'Resources' },
   { href: '/about/', label: 'About' },
@@ -51,7 +52,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="/" className="flex items-center flex-shrink-0">
-          <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} className="h-8 w-auto" priority />
+          <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} sizes="140px" className="h-8 w-auto" priority />
         </a>
 
         {/* Desktop nav */}
@@ -152,6 +153,12 @@ export default function Navbar() {
                     <span className="text-xs">Free analysis tools — no signup required</span>
                   </div>
                   <div className="flex items-center gap-2 flex-shrink-0">
+                    <a
+                      href="/services/"
+                      className="inline-flex items-center gap-1.5 text-gray-500 text-xs font-semibold hover:text-blue-600 transition-colors"
+                    >
+                      View All Services →
+                    </a>
                     <a
                       href="/free-orm-scan/"
                       className="inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"

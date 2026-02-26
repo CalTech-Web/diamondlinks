@@ -32,11 +32,11 @@ export default function ContactPage() {
     <ScrollReveal>
       <PageHero
         eyebrow="Contact Us"
-        headline="Let's Talk About"
-        gradientText="Your Reputation"
-        description="Whether you're dealing with a reputation crisis or want to proactively protect your brand, we're here to help. Reach out and we'll respond within 24 hours."
+        headline="Ready to See"
+        gradientText="the Difference?"
+        description="17+ years of proven SEO and ORM expertise. Whether you're dealing with a reputation crisis or want to proactively grow your visibility, we're here to help. Reach out and we'll respond within 24 hours."
         primaryCta={{ label: 'Call Us Now', href: company.phoneTel }}
-        secondaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
+        secondaryCta={{ label: 'Request a Quote', href: '/request-a-quote/' }}
         dark={false}
       />
 
@@ -72,9 +72,9 @@ export default function ContactPage() {
               <p className="text-gray-500 text-sm">{company.city}, {company.state} {company.zip}</p>
             </div>
 
-            {/* Email / Form */}
+            {/* Email */}
             <a
-              href="/free-orm-scan/"
+              href={`mailto:${company.email}`}
               className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all p-7 group text-center"
             >
               <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mx-auto mb-5">
@@ -82,8 +82,8 @@ export default function ContactPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>
               </div>
-              <h3 className="text-gray-900 font-bold text-base mb-1">Free Analysis</h3>
-              <p className="text-blue-600 font-semibold text-sm group-hover:text-blue-500 transition-colors">Request a Quote</p>
+              <h3 className="text-gray-900 font-bold text-base mb-1">Email</h3>
+              <p className="text-blue-600 font-semibold text-sm group-hover:text-blue-500 transition-colors">{company.email}</p>
               <p className="text-gray-400 text-xs mt-1">Response within 24 hours</p>
             </a>
           </div>

@@ -87,10 +87,10 @@ const personSchema = {
   "@type": "Person",
   "@id": "https://diamondlinks.com/#brandon-hopkins",
   "name": "Brandon Hopkins",
-  "jobTitle": "Founder & President",
+  "jobTitle": "Founder & CEO",
   "worksFor": { "@id": "https://diamondlinks.com/#organization" },
   "url": "https://diamondlinks.com/about/",
-  "description": "Brandon Hopkins is the Founder & President of DiamondLinks, a New Orleans-based ORM & SEO agency he founded in 2011. With two successful business exits and 15+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
+  "description": "Brandon Hopkins is the Founder & CEO of DiamondLinks, a New Orleans-based ORM & SEO agency he founded in 2011. With two successful business exits and 17+ years in online reputation management, he specializes in suppressing negative search results and building authoritative digital presences for executives, brands, and organizations nationwide.",
   "knowsAbout": [
     "Online Reputation Management",
     "Search Engine Optimization",
@@ -99,6 +99,25 @@ const personSchema = {
     "Content Strategy",
     "Personal Brand Management",
     "Crisis PR",
+  ],
+}
+
+const hilarySchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://diamondlinks.com/#hilary-spross",
+  "name": "Hilary Spross",
+  "jobTitle": "President",
+  "worksFor": { "@id": "https://diamondlinks.com/#organization" },
+  "url": "https://diamondlinks.com/about/",
+  "description": "Hilary Spross is the President of DiamondLinks, bringing 24 years of digital marketing expertise to lead strategy and innovation. Her background spans SEO, content marketing, and reputation management across industries.",
+  "knowsAbout": [
+    "Digital Marketing Strategy",
+    "Search Engine Optimization",
+    "Content Marketing",
+    "Online Reputation Management",
+    "Team Leadership",
+    "Client Strategy",
   ],
 }
 
@@ -120,41 +139,36 @@ export default function AboutPage() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hilarySchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     <ScrollReveal>
       <PageHero
         eyebrow="About DiamondLinks"
-        headline="ORM Specialists Since 2011."
-        gradientText="Not Generalists."
-        description="We built this agency around one belief: reputation management deserves dedicated specialists, not a generalist team doing ORM on the side."
+        headline="Powered by People,"
+        gradientText="Perfected with AI."
+        description="Our US-based team of experts builds true recovery, visibility, and reputation through powerful SEO and ORM campaigns — built on proven best practices and elevated by data-driven insights."
         primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
-        secondaryCta={{ label: 'See Our Services', href: '/solutions/online-reputation-management/' }}
+        secondaryCta={{ label: 'See Our Services', href: '/services/' }}
         dark={true}
       />
 
-      {/* Founder Section */}
+      {/* Leadership Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-2">Leadership</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Meet the Founder
-              </h2>
-              <div className="space-y-4 text-gray-500 leading-relaxed">
-                <p>
-                  {company.founderName} founded DiamondLinks in {company.founded} with a clear mission: help businesses
-                  and individuals take control of what people find when they search their name.
-                </p>
-                <p>
-                  With two successful exits under his belt and over 15 years in the reputation management
-                  industry, Brandon brings a rare combination of operational discipline and deep ORM expertise
-                  to every engagement.
-                </p>
-              </div>
-            </div>
+          <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-2 text-center">Leadership</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Meet Our Leadership
+          </h2>
+          <p className="text-gray-500 leading-relaxed max-w-2xl mx-auto text-center mb-12">
+            Our leadership team brings decades of combined experience across digital marketing, SEO, and online reputation management — blending human insight with data-driven strategy.
+          </p>
 
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Brandon */}
             <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
@@ -165,10 +179,11 @@ export default function AboutPage() {
                   <p className="text-gray-500 text-sm">{company.founderTitle}</p>
                 </div>
               </div>
-              <blockquote className="text-gray-600 italic leading-relaxed border-l-2 border-blue-200 pl-5">
-                &ldquo;Your online reputation is the first impression you never get to make in person. Every
-                search result is either building trust or eroding it. We exist to make sure the story
-                people find is the real one.&rdquo;
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Brandon founded DiamondLinks in {company.founded} with a clear mission: help businesses and individuals take control of what people find when they search their name. With two successful exits and 17+ years in the reputation management industry, he brings operational discipline and deep ORM expertise to every engagement.
+              </p>
+              <blockquote className="text-gray-600 italic leading-relaxed border-l-2 border-blue-200 pl-5 text-sm">
+                &ldquo;Your online reputation is the first impression you never get to make in person. We exist to make sure the story people find is the real one.&rdquo;
               </blockquote>
               <div className="mt-6 flex flex-wrap gap-4">
                 <div className="bg-white rounded-xl border border-gray-100 px-4 py-3 text-center">
@@ -180,8 +195,37 @@ export default function AboutPage() {
                   <p className="text-gray-500 text-xs">Successful Exits</p>
                 </div>
                 <div className="bg-white rounded-xl border border-gray-100 px-4 py-3 text-center">
-                  <p className="text-gray-900 font-bold text-lg">15+ yrs</p>
+                  <p className="text-gray-900 font-bold text-lg">17+ yrs</p>
                   <p className="text-gray-500 text-xs">In ORM Industry</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Hilary */}
+            <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                  HS
+                </div>
+                <div>
+                  <p className="text-gray-900 font-bold text-lg">{company.presidentName}</p>
+                  <p className="text-gray-500 text-sm">{company.presidentTitle}</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Hilary brings 24 years of digital marketing expertise to DiamondLinks, leading strategy and innovation across all client engagements. Her background spans SEO, content marketing, and reputation management across industries — with a talent for translating complex data into clear, actionable growth plans.
+              </p>
+              <blockquote className="text-gray-600 italic leading-relaxed border-l-2 border-indigo-200 pl-5 text-sm">
+                &ldquo;The best results come from combining human strategic insight with the precision of AI and data. That&apos;s the DiamondLinks difference.&rdquo;
+              </blockquote>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <div className="bg-white rounded-xl border border-gray-100 px-4 py-3 text-center">
+                  <p className="text-gray-900 font-bold text-lg">24 yrs</p>
+                  <p className="text-gray-500 text-xs">Digital Marketing</p>
+                </div>
+                <div className="bg-white rounded-xl border border-gray-100 px-4 py-3 text-center">
+                  <p className="text-gray-900 font-bold text-lg">Strategy</p>
+                  <p className="text-gray-500 text-xs">& Innovation Lead</p>
                 </div>
               </div>
             </div>
@@ -195,7 +239,7 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="Why DiamondLinks"
             title="What Sets Us Apart"
-            subtitle="We're not a marketing agency that happens to offer ORM. We're ORM specialists who do nothing else."
+            subtitle="We blend human expertise with AI to deliver SEO and ORM that actually work — not a generalist agency doing reputation on the side."
           />
           <FeatureGrid features={differentiatorFeatures} columns={3} />
         </div>
@@ -275,7 +319,7 @@ export default function AboutPage() {
       <section className="py-4 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <ConversionStrip
-            headline="Ready to work with a team that only does ORM?"
+            headline="Ready to work with a team powered by people and perfected with AI?"
             subtext="Get a free, confidential analysis of your search results."
           />
         </div>

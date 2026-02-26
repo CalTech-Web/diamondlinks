@@ -2,6 +2,7 @@ export const company = {
   name: 'DiamondLinks',
   phone: '504.233.4365',
   phoneTel: 'tel:504-233-4365',
+  email: 'sales@diamondlinks.com',
   address: '3436 Magazine Street #622',
   city: 'New Orleans',
   state: 'LA',
@@ -9,12 +10,14 @@ export const company = {
   fullAddress: '3436 Magazine Street #622, New Orleans, LA 70115',
   founded: 2011,
   copyright: '© 2011–2026 DiamondLinks.com. All Rights Reserved.',
-  tagline: 'Suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.',
-  oneLiner: 'New Orleans-based ORM & SEO agency with 30+ years of combined expertise — built to fix and protect what prospects find when they Google you.',
+  tagline: 'Powered by People, Perfected with AI',
+  oneLiner: 'Our US-based team of experts builds true recovery, visibility, and reputation through powerful SEO and ORM campaigns — built on proven best practices and elevated by data-driven insights.',
   founderName: 'Brandon Hopkins',
-  founderTitle: 'Founder & President',
+  founderTitle: 'Founder & CEO',
+  presidentName: 'Hilary Spross',
+  presidentTitle: 'President',
   website: 'https://DiamondLinks.com',
-  requestQuoteUrl: '/free-orm-scan/',
+  requestQuoteUrl: '/request-a-quote/',
 }
 
 export const stats = {
@@ -29,28 +32,34 @@ export const stats = {
 
 export const testimonials = [
   {
-    quote: "Having a positive online reputation is vital to any business. Without the online reputation management experience DiamondLinks possesses, there's no telling where we would be today.",
-    name: 'Narin C.',
-    title: 'CEO, Capital Alliance',
-    result: 'Page 1 owned in 120 days',
+    quote: "DiamondLinks transformed our online presence. Their strategic approach to content and backlinks gave us visibility we never thought possible.",
+    name: 'Inspect & Track',
+    title: 'SaaS Platform',
+    result: '312% increase in organic traffic in 6 months',
   },
   {
-    quote: "DiamondLinks was a lifesaver. Finance can be a messy industry, and I feel confident continuing in it by having DiamondLinks manage my online reputation.",
-    name: 'Rusty T.',
-    title: 'CEO, Finance Company',
-    result: '0 negative results in 90 days',
+    quote: "The team at DiamondLinks understood our complex B2B landscape and delivered SEO results that directly impacted our pipeline.",
+    name: 'Keyfactor',
+    title: 'Enterprise Security',
+    result: '187% growth in qualified organic leads',
   },
   {
-    quote: "Brandon and team definitely know what they are doing. From SEO to reputation management they are a great asset and help to our growing list of companies.",
-    name: 'Richart R.',
-    title: 'CEO, SEO Company',
-    result: 'Page 1 in 60 days',
+    quote: "After a reputation crisis, DiamondLinks rebuilt our online presence from the ground up. The turnaround was remarkable.",
+    name: 'Condominium Comeback',
+    title: 'Real Estate',
+    result: 'Negative results suppressed from page 1 in 90 days',
   },
   {
-    quote: "Brandon Hopkins, the brain behind our SEO strategy. He's done a great job for us and has been key in driving our ranking up along with ranking our content.",
-    name: 'Reed G.',
-    title: 'CEO, SEO Company',
-    result: 'Rankings improved',
+    quote: "DiamondLinks delivered a comprehensive SEO strategy that elevated our brand visibility across every major search term in our industry.",
+    name: 'Mannington Commercial',
+    title: 'Commercial Flooring',
+    result: '45+ keywords ranking on page 1 within 4 months',
+  },
+  {
+    quote: "Working with DiamondLinks gave us the competitive edge we needed. Their data-driven approach and transparent reporting set them apart.",
+    name: 'Flight Providers',
+    title: 'Aviation Services',
+    result: '2.4x increase in organic conversions year-over-year',
   },
 ]
 
