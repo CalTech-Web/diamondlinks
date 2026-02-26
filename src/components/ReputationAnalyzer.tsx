@@ -91,8 +91,9 @@ function SentimentBadge({ sentiment }: { sentiment: SearchResult['sentiment'] })
 }
 
 function SearchResultCard({ result, position, isNew }: { result: SearchResult; position: number; isNew?: boolean }) {
+  const isNegative = result.sentiment === 'negative'
   return (
-    <div className="group py-4 first:pt-0 last:pb-0">
+    <div className={`group py-4 first:pt-0 last:pb-0 ${isNegative ? '-mx-4 px-4 bg-red-50/60 rounded-xl border border-red-100/60' : ''}`}>
       <div className="flex items-start gap-3">
         <div className={`flex-shrink-0 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center mt-0.5 ${
           isNew ? 'bg-emerald-50 text-emerald-500' : 'bg-gray-100 text-gray-400'
@@ -476,17 +477,6 @@ export default function ReputationAnalyzer() {
           <RevealSection delay={100}>
             <div className="flex items-center justify-between flex-wrap gap-4">
               <ViewToggle view={view} onToggle={setView} />
-              {!report.isLive && (
-                <span className="text-gray-400 text-xs bg-gray-50 px-2 py-1 rounded-md font-medium">
-                  Demo Mode — Add Google API keys for live results
-                </span>
-              )}
-              {report.isLive && (
-                <span className="text-emerald-600 text-xs bg-emerald-50 px-2 py-1 rounded-md font-medium flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  Live Google Data
-                </span>
-              )}
             </div>
           </RevealSection>
 

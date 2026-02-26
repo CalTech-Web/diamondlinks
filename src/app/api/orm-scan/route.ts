@@ -227,7 +227,8 @@ function generateAfterResults(query: string, currentResults: SearchResult[]): Se
         }
       }
     } else {
-      afterResults.push(result)
+      // Upgrade neutral results to positive — DiamondLinks optimizes existing content
+      afterResults.push({ ...result, sentiment: result.sentiment === 'neutral' ? 'positive' : result.sentiment })
       usedDisplayUrls.add(result.displayUrl)
     }
   }
