@@ -952,11 +952,11 @@ export async function POST(request: NextRequest) {
     const baseMetrics = generateKeyMetrics(html)
 
     // Add off-page metrics (estimated values marked with *), skip any that are 0
-    const offPageMetrics: SeoKeyMetric[] = [
+    const offPageMetrics = ([
       { label: 'Indexed Pages', value: offPage.indexedPages > 0 ? String(offPage.indexedPages) + '+' : '', trend: offPage.indexedPages >= 10 ? 'up' : offPage.indexedPages >= 3 ? 'flat' : 'down' },
       { label: 'Backlinks*', value: offPage.backlinks > 0 ? '~' + offPage.backlinks.toLocaleString() : '', trend: offPage.backlinks >= 100 ? 'up' : 'flat' },
       { label: 'Ref. Domains*', value: offPage.referringDomains > 0 ? '~' + offPage.referringDomains.toLocaleString() : '', trend: offPage.referringDomains >= 30 ? 'up' : 'flat' },
-    ].filter(m => m.value !== '')
+    ] as SeoKeyMetric[]).filter(m => m.value !== '')
 
     const keyMetrics: SeoKeyMetric[] = [
       ...offPageMetrics,
