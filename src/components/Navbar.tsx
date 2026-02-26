@@ -52,7 +52,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="/" className="flex items-center flex-shrink-0">
-          <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} sizes="140px" className="h-8 w-auto" priority />
+          <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} sizes="140px" className="h-8 w-auto" priority fetchPriority="high" />
         </a>
 
         {/* Desktop nav */}
