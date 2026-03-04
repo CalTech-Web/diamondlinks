@@ -61,24 +61,26 @@ export default function AbitaViewCaseStudyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ScrollReveal>
-        {/* Article Header */}
-        <section className="bg-gray-950 text-white pt-20 pb-16 px-6 relative overflow-hidden">
+        {/* Hero Header */}
+        <section className="bg-gray-950 text-white pt-20 pb-24 px-6 relative overflow-hidden">
+          {/* Gradient orbs */}
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-indigo-500/15 rounded-full blur-[100px] pointer-events-none" />
+          {/* Dot grid */}
           <div
-            className="absolute inset-0 pointer-events-none"
-            style={{ background: 'radial-gradient(ellipse 70% 80% at 30% 40%, rgba(37,99,235,0.25) 0%, transparent 65%)' }}
-          />
-          <div
-            className="absolute inset-0 pointer-events-none opacity-[0.18]"
+            className="absolute inset-0 pointer-events-none opacity-[0.12]"
             style={{
-              backgroundImage: 'radial-gradient(rgba(255,255,255,0.18) 1px, transparent 1px)',
+              backgroundImage: 'radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px)',
               backgroundSize: '28px 28px',
             }}
           />
+          {/* Diagonal cut */}
           <div
-            className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
+            className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
             style={{ background: 'linear-gradient(to bottom right, transparent 49.9%, white 50%)' }}
           />
-          <div className="relative max-w-3xl mx-auto">
+
+          <div className="relative max-w-5xl mx-auto">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -88,193 +90,623 @@ export default function AbitaViewCaseStudyPage() {
               <span className="text-gray-500">Abita View</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
-              Case Study
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight mb-6">
-              From 60% to 98% Occupancy: How Local SEO Transformed Abita View Apartments
-            </h1>
-
-            <div className="flex items-center gap-4 mt-8">
-              <div className="w-11 h-11 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                BH
-              </div>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-white font-semibold text-sm">Brandon Hopkins</p>
-                <p className="text-gray-400 text-sm">Founder &amp; CEO &middot; Mar 2026</p>
+                <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
+                  Case Study &middot; Real Estate
+                </div>
+
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight mb-6">
+                  Abita View:{' '}
+                  <span
+                    style={{
+                      background: 'linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    60% to 98% Occupancy
+                  </span>
+                </h1>
+
+                <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                  How DiamondLinks transformed a Louisiana apartment complex&apos;s local search presence through strategic SEO, earning 152 new backlinks and driving occupancy from crisis-level to near-full capacity.
+                </p>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                    BH
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold text-sm">Brandon Hopkins</p>
+                    <p className="text-gray-400 text-sm">Founder &amp; CEO &middot; Mar 2026</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hero Stats Card */}
+              <div className="bg-white/[0.04] backdrop-blur-sm border border-white/10 rounded-2xl p-8 space-y-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-2">Campaign Highlights</p>
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <p className="text-3xl font-bold text-white">60 &rarr; 98%</p>
+                    <p className="text-gray-400 text-sm mt-1">Occupancy Rate</p>
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-white">+206%</p>
+                    <p className="text-gray-400 text-sm mt-1">Organic Traffic</p>
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-white">7 &rarr; 10</p>
+                    <p className="text-gray-400 text-sm mt-1">Domain Rating</p>
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-white">+152</p>
+                    <p className="text-gray-400 text-sm mt-1">New Backlinks</p>
+                  </div>
+                </div>
+                <div className="pt-4 border-t border-white/10">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                      <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-white text-sm font-medium">Near-full occupancy in under a year</p>
+                      <p className="text-gray-500 text-xs">Campaign started March 2024</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Article Body */}
-        <article className="py-16 px-6 bg-white">
+        {/* Results Overview */}
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Results At a Glance</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Key Performance Metrics</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Occupancy Rate */}
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Occupancy Rate</p>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold text-gray-900">60%</span>
+                  <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  <span
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >98%</span>
+                </div>
+                <p className="text-gray-400 text-sm mt-2">From crisis to near-full</p>
+              </div>
+
+              {/* Organic Traffic */}
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Organic Traffic</p>
+                <p
+                  className="text-3xl font-bold"
+                  style={{
+                    background: 'linear-gradient(135deg, #059669 0%, #34d399 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >+206%</p>
+                <p className="text-gray-400 text-sm mt-2">Local search visibility tripled</p>
+              </div>
+
+              {/* Domain Rating */}
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Domain Rating</p>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold text-gray-900">7</span>
+                  <svg className="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  <span
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #4f46e5 0%, #818cf8 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >10</span>
+                </div>
+                <p className="text-gray-400 text-sm mt-2">+43% authority increase</p>
+              </div>
+
+              {/* Referring Domains */}
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-violet-50 border border-violet-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Referring Domains</p>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold text-gray-900">12</span>
+                  <svg className="w-5 h-5 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  <span
+                    className="text-3xl font-bold"
+                    style={{
+                      background: 'linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >80</span>
+                </div>
+                <p className="text-gray-400 text-sm mt-2">567% domain growth</p>
+              </div>
+
+              {/* New Backlinks */}
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">New Backlinks</p>
+                <p
+                  className="text-3xl font-bold"
+                  style={{
+                    background: 'linear-gradient(135deg, #d97706 0%, #fbbf24 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >+152</p>
+                <p className="text-gray-400 text-sm mt-2">Locally relevant sources</p>
+              </div>
+
+              {/* Local Keywords */}
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-rose-50 border border-rose-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Local Keywords</p>
+                <p
+                  className="text-3xl font-bold"
+                  style={{
+                    background: 'linear-gradient(135deg, #e11d48 0%, #fb7185 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >+62%</p>
+                <p className="text-gray-400 text-sm mt-2">Transactional keyword growth</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Traffic Growth Chart */}
+        <section className="py-16 px-6 bg-gray-50 border-y border-gray-100">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+              <div className="p-6 md:p-8 border-b border-gray-100">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-1">Organic Performance</p>
+                    <h3 className="text-xl font-bold text-gray-900">Traffic &amp; Referring Domains Growth</h3>
+                  </div>
+                  <div className="flex items-center gap-6 text-sm">
+                    <div className="flex items-center gap-2">
+                      <span className="w-3 h-3 rounded-full bg-orange-400" />
+                      <span className="text-gray-500">Avg. Organic Traffic</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="w-3 h-3 rounded-full bg-blue-500" />
+                      <span className="text-gray-500">Referring Domains</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 md:p-8">
+                {/* SVG Chart — recreated from the Ahrefs data in the PDF */}
+                <svg viewBox="0 0 800 280" className="w-full h-auto" role="img" aria-label="Traffic and referring domains growth chart showing steady increases from March 2024 through January 2025">
+                  {/* Grid lines */}
+                  <line x1="60" y1="30" x2="60" y2="240" stroke="#e5e7eb" strokeWidth="1" />
+                  <line x1="60" y1="240" x2="780" y2="240" stroke="#e5e7eb" strokeWidth="1" />
+                  <line x1="60" y1="187" x2="780" y2="187" stroke="#f3f4f6" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="60" y1="135" x2="780" y2="135" stroke="#f3f4f6" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="60" y1="82" x2="780" y2="82" stroke="#f3f4f6" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="60" y1="30" x2="780" y2="30" stroke="#f3f4f6" strokeWidth="1" strokeDasharray="4 4" />
+
+                  {/* Y-axis labels — Left: Referring Domains */}
+                  <text x="50" y="244" textAnchor="end" className="text-[11px]" fill="#9ca3af">0</text>
+                  <text x="50" y="191" textAnchor="end" className="text-[11px]" fill="#9ca3af">20</text>
+                  <text x="50" y="139" textAnchor="end" className="text-[11px]" fill="#9ca3af">40</text>
+                  <text x="50" y="86" textAnchor="end" className="text-[11px]" fill="#9ca3af">60</text>
+                  <text x="50" y="34" textAnchor="end" className="text-[11px]" fill="#9ca3af">80</text>
+
+                  {/* Y-axis labels — Right: Organic Traffic */}
+                  <text x="790" y="244" textAnchor="start" className="text-[11px]" fill="#9ca3af">0</text>
+                  <text x="790" y="191" textAnchor="start" className="text-[11px]" fill="#9ca3af">50</text>
+                  <text x="790" y="139" textAnchor="start" className="text-[11px]" fill="#9ca3af">100</text>
+                  <text x="790" y="86" textAnchor="start" className="text-[11px]" fill="#9ca3af">150</text>
+                  <text x="790" y="34" textAnchor="start" className="text-[11px]" fill="#9ca3af">200</text>
+
+                  {/* X-axis labels */}
+                  <text x="100" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Feb 2024</text>
+                  <text x="195" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Mar</text>
+                  <text x="280" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">May</text>
+                  <text x="370" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Jun</text>
+                  <text x="460" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Aug</text>
+                  <text x="550" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Sep</text>
+                  <text x="640" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Nov</text>
+                  <text x="730" y="260" textAnchor="middle" className="text-[11px]" fill="#9ca3af">Jan 2025</text>
+
+                  {/* Gradient fills */}
+                  <defs>
+                    <linearGradient id="trafficGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#fb923c" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="#fb923c" stopOpacity="0.02" />
+                    </linearGradient>
+                    <linearGradient id="refGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.02" />
+                    </linearGradient>
+                  </defs>
+
+                  {/* Blue referring domains area — starts ~50 (mid-range), dips, then climbs to ~80 */}
+                  <path
+                    d="M100,108 L145,120 L195,122 L240,125 L280,130 L325,128 L370,118 L415,110 L460,95 L505,85 L550,72 L595,62 L640,52 L685,42 L730,35 L730,240 L100,240 Z"
+                    fill="url(#refGrad)"
+                  />
+                  {/* Blue referring domains line */}
+                  <path
+                    d="M100,108 L145,120 L195,122 L240,125 L280,130 L325,128 L370,118 L415,110 L460,95 L505,85 L550,72 L595,62 L640,52 L685,42 L730,35"
+                    fill="none"
+                    stroke="#3b82f6"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  {/* Orange organic traffic area — starts ~50, climbs steadily to ~200 */}
+                  <path
+                    d="M100,188 L145,190 L195,186 L240,182 L280,175 L325,168 L370,155 L415,140 L460,120 L505,105 L550,88 L595,72 L640,58 L685,48 L730,38 L730,240 L100,240 Z"
+                    fill="url(#trafficGrad)"
+                  />
+                  {/* Orange organic traffic line */}
+                  <path
+                    d="M100,188 L145,190 L195,186 L240,182 L280,175 L325,168 L370,155 L415,140 L460,120 L505,105 L550,88 L595,72 L640,58 L685,48 L730,38"
+                    fill="none"
+                    stroke="#f97316"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+
+                  {/* Endpoint dots */}
+                  <circle cx="730" cy="38" r="5" fill="#f97316" />
+                  <circle cx="730" cy="35" r="5" fill="#3b82f6" />
+
+                  {/* Labels at end */}
+                  <rect x="738" y="28" width="42" height="20" rx="4" fill="#f97316" />
+                  <text x="759" y="42" textAnchor="middle" className="text-[10px]" fill="white" fontWeight="600">200</text>
+                  <rect x="738" y="52" width="30" height="20" rx="4" fill="#3b82f6" />
+                  <text x="753" y="66" textAnchor="middle" className="text-[10px]" fill="white" fontWeight="600">80</text>
+
+                  {/* Start markers */}
+                  <circle cx="100" cy="188" r="4" fill="#f97316" opacity="0.5" />
+                  <circle cx="100" cy="108" r="4" fill="#3b82f6" opacity="0.5" />
+                </svg>
+                <p className="text-center text-gray-400 text-xs mt-4">
+                  Organic traffic and referring domain growth since campaign commencement in March 2024, showing a steady upward trajectory.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About the Client */}
+        <section className="py-16 px-6 bg-white">
           <div className="max-w-3xl mx-auto">
-            <div className="space-y-6 text-gray-600 text-base leading-relaxed">
-              <p>
-                When Abita View, a local apartment complex in Louisiana, came to DiamondLinks in March 2024, they were facing a problem that many property managers know too well: empty units. With occupancy sitting at just 60% in the aftermath of COVID, the complex was bleeding revenue and struggling to attract new tenants through traditional advertising. They needed a strategy that would put them in front of the people who were already searching for apartments in their area, and they needed results fast.
-              </p>
+            <div className="flex items-start gap-4 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8">
+              <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+                <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 text-lg mb-2">About Abita View</h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Abita View is a local apartment complex in Abita Springs, Louisiana, serving the residential rental market in St. Tammany Parish. When they came to DiamondLinks in March 2024, the property was facing a serious occupancy problem in the aftermath of COVID. With only 60% of their units filled, they needed a strategy that would connect them with the renters who were actively searching for apartments in their area — and they needed it fast.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <p>
-                What followed was a focused, data-driven SEO campaign that took Abita View from a near-crisis occupancy rate to near-full in under a year. This is the story of how we did it.
-              </p>
+        {/* The Challenge */}
+        <section className="py-16 px-6 bg-gray-50 border-y border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center">
+                <svg className="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                </svg>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">The Challenge</h2>
+            </div>
 
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">The Challenge</h2>
-
+            <div className="space-y-5 text-gray-600 text-base leading-relaxed">
               <p>
                 The post-COVID rental market in Louisiana presented a unique set of difficulties. Tenants who had left during the pandemic were not coming back on their own, and the local competition for renters had intensified as other complexes dropped prices and ramped up paid advertising. Abita View had a solid property, but their online presence was virtually invisible. Their website was not ranking for the local search terms that prospective tenants were actually using, and the domain carried almost no authority in the eyes of search engines.
               </p>
 
-              <p>
-                The numbers told the story clearly. A Domain Rating of just 7 meant the site had almost no backlink profile to speak of. Only 12 referring domains were pointing to the site. Organic traffic was minimal, and the keywords they were ranking for were mostly informational rather than transactional. In other words, the few people who did find them online were not the people actively looking to sign a lease.
-              </p>
-
-              <p>
-                The primary objective was straightforward: convert local search traffic into signed leases. Every decision we made throughout the campaign was oriented around that single goal.
-              </p>
-
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">Our Approach</h2>
-
-              <p>
-                We built Abita View&apos;s SEO campaign around four interconnected pillars, each designed to reinforce the others and compound results over time.
-              </p>
-
-              <p>
-                <strong className="text-gray-900">Keyword optimization focused on local transactional terms.</strong> Rather than chasing high-volume national keywords that would never convert for a single-location apartment complex, we identified and targeted the specific phrases that local renters use when they are ready to act. Terms like &ldquo;apartments for rent in Abita Springs,&rdquo; &ldquo;Abita Springs LA apartments,&rdquo; and &ldquo;pet-friendly apartments near Abita Springs&rdquo; became the foundation of our keyword strategy. These are the searches that signal intent, not curiosity, and they are the queries that turn into tours, applications, and signed leases.
-              </p>
-
-              <p>
-                <strong className="text-gray-900">On-page SEO and content audits.</strong> We conducted a thorough audit of every page on the Abita View website, restructuring title tags, meta descriptions, header hierarchies, and internal linking to align with our target keywords. We also identified content gaps and created new pages targeting high-intent search queries that the site had no presence for. Every piece of content was written to serve the prospective tenant first, answering their questions, addressing their concerns, and making it easy to take the next step.
-              </p>
-
-              <p>
-                <strong className="text-gray-900">Backlink improvement from local and real estate domains.</strong> A Domain Rating of 7 was not going to compete, even in a local market. We executed a targeted link-building campaign focused on acquiring backlinks from locally relevant and industry-relevant sources: Louisiana business directories, real estate listing platforms, community resources, and local media. The goal was not just to increase the raw number of links but to build the kind of topical and geographic relevance that search engines reward for local queries.
-              </p>
-
-              <p>
-                <strong className="text-gray-900">Technical SEO and site speed optimizations.</strong> Fast-loading, mobile-friendly websites rank better, and they convert better. We addressed technical issues including page speed, mobile responsiveness, crawl errors, schema markup, and Core Web Vitals. For an apartment complex where most prospective tenants are searching on their phones, mobile performance was especially critical.
-              </p>
-
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">The Results</h2>
-
-              <p>
-                The impact of the campaign was measurable across every metric that matters, but the one that matters most to a property manager is occupancy. And on that front, the results speak for themselves.
-              </p>
-
-              {/* Results Grid */}
-              <div className="grid sm:grid-cols-2 gap-4 py-4">
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Occupancy Rate</p>
-                  <p
-                    className="text-3xl font-bold"
-                    style={{
-                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    60% &rarr; 98%
-                  </p>
-                </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Organic Traffic</p>
-                  <p
-                    className="text-3xl font-bold"
-                    style={{
-                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    +206%
-                  </p>
-                </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Domain Rating</p>
-                  <p
-                    className="text-3xl font-bold"
-                    style={{
-                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    7 &rarr; 10
-                  </p>
-                </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Referring Domains</p>
-                  <p
-                    className="text-3xl font-bold"
-                    style={{
-                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    12 &rarr; 80
-                  </p>
-                </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">New Backlinks</p>
-                  <p
-                    className="text-3xl font-bold"
-                    style={{
-                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    +152
-                  </p>
-                </div>
-                <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 text-center">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Local Keywords</p>
-                  <p
-                    className="text-3xl font-bold"
-                    style={{
-                      background: 'linear-gradient(135deg, #2563eb 0%, #818cf8 50%, #a78bfa 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    +62%
-                  </p>
+              {/* Before State Card */}
+              <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8">
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">Starting Position — March 2024</p>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                    <div className="w-2 h-2 rounded-full bg-gray-400 flex-shrink-0" />
+                    <div>
+                      <p className="text-gray-900 font-semibold">60% occupancy</p>
+                      <p className="text-gray-400 text-sm">Units sitting empty</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                    <div className="w-2 h-2 rounded-full bg-gray-400 flex-shrink-0" />
+                    <div>
+                      <p className="text-gray-900 font-semibold">DR 7</p>
+                      <p className="text-gray-400 text-sm">Domain rating</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                    <div className="w-2 h-2 rounded-full bg-gray-400 flex-shrink-0" />
+                    <div>
+                      <p className="text-gray-900 font-semibold">12 referring domains</p>
+                      <p className="text-gray-400 text-sm">Minimal backlink profile</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-4">
+                    <div className="w-2 h-2 rounded-full bg-gray-400 flex-shrink-0" />
+                    <div>
+                      <p className="text-gray-900 font-semibold">Minimal organic traffic</p>
+                      <p className="text-gray-400 text-sm">Informational keywords only</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <p>
-                <strong className="text-gray-900">Occupancy went from 60% to 98%.</strong> That is the number that changed everything for Abita View. Nearly four out of every ten units that were sitting empty are now filled. For a property manager, that is the difference between operating at a loss and running a profitable, sustainable business. Every other metric on this page contributed to that outcome, but this is the one that paid the bills.
+                The primary objective was straightforward: convert local search traffic into signed leases. Every decision we made throughout the campaign was oriented around that single goal. This was not about vanity metrics — it was about filling apartments.
               </p>
+            </div>
+          </div>
+        </section>
 
-              <p>
-                <strong className="text-gray-900">Organic traffic increased by 206%.</strong> More than tripling the organic traffic to the site meant that Abita View was consistently appearing in front of prospective tenants who were actively searching for apartments in their area. This was not paid traffic that would disappear the moment the ad budget ran out. This was earned visibility built on a foundation that continues to deliver month after month.
-              </p>
+        {/* Strategy & Execution */}
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-3">Strategy &amp; Execution</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Four Pillars of Growth</h2>
+              <p className="text-gray-500 mt-3 max-w-2xl mx-auto">We built a focused local SEO strategy around four interconnected pillars, each designed to reinforce the others and compound results over time.</p>
+            </div>
 
-              <p>
-                <strong className="text-gray-900">Domain Rating climbed from 7 to 10, and referring domains grew from 12 to 80.</strong> A 152-backlink increase from targeted, relevant sources transformed the site&apos;s authority profile. For a local business competing in a specific geographic market, this level of domain authority growth is significant. It means the site now has the credibility to rank for competitive local terms and hold those positions against other properties in the area.
-              </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Pillar 1 */}
+              <div className="relative bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-100 p-6 md:p-8">
+                <div className="absolute top-6 right-6 text-5xl font-black text-blue-100">01</div>
+                <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">Local Keyword Optimization</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Rather than chasing high-volume national keywords, we identified and targeted the specific phrases that local renters use when they are ready to act — terms like &ldquo;apartments for rent in Abita Springs,&rdquo; &ldquo;Abita Springs LA apartments,&rdquo; and &ldquo;pet-friendly apartments near Abita Springs.&rdquo; These are the searches that signal intent, not curiosity.
+                </p>
+              </div>
 
-              <p>
-                <strong className="text-gray-900">Local transactional keywords increased by 62%.</strong> This is where the strategy came full circle. More transactional keywords meant more visibility for the searches that actually convert. When someone types &ldquo;apartments for rent near me&rdquo; in Abita Springs, Louisiana, Abita View now shows up. That visibility is what drives tours, applications, and signed leases.
-              </p>
+              {/* Pillar 2 */}
+              <div className="relative bg-gradient-to-br from-indigo-50 to-white rounded-2xl border border-indigo-100 p-6 md:p-8">
+                <div className="absolute top-6 right-6 text-5xl font-black text-indigo-100">02</div>
+                <div className="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">On-Page SEO &amp; Content</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Comprehensive audit of every page on the site, restructuring title tags, meta descriptions, header hierarchies, and internal linking. We identified content gaps and created new pages targeting high-intent search queries, all written to serve the prospective tenant first.
+                </p>
+              </div>
 
-              <h2 className="text-2xl font-bold text-gray-900 pt-4">Key Takeaway</h2>
+              {/* Pillar 3 */}
+              <div className="relative bg-gradient-to-br from-violet-50 to-white rounded-2xl border border-violet-100 p-6 md:p-8">
+                <div className="absolute top-6 right-6 text-5xl font-black text-violet-100">03</div>
+                <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">Backlink Improvement</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  A targeted link-building campaign focused on acquiring backlinks from locally relevant and industry-relevant sources: Louisiana business directories, real estate listing platforms, community resources, and local media. We added 152 new backlinks and grew referring domains from 12 to 80.
+                </p>
+              </div>
+
+              {/* Pillar 4 */}
+              <div className="relative bg-gradient-to-br from-emerald-50 to-white rounded-2xl border border-emerald-100 p-6 md:p-8">
+                <div className="absolute top-6 right-6 text-5xl font-black text-emerald-100">04</div>
+                <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">Technical SEO</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Thorough site audit addressing page speed, mobile responsiveness, crawl errors, schema markup, and Core Web Vitals. For an apartment complex where most prospective tenants are searching on their phones, mobile performance was especially critical.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Before/After Comparison */}
+        <section className="py-16 px-6 bg-gray-950 text-white relative overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
+          <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
+
+          <div className="relative max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-3">Impact</p>
+              <h2 className="text-2xl md:text-3xl font-bold">Before &amp; After</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Before */}
+              <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 md:p-8">
+                <div className="inline-flex items-center gap-2 bg-gray-500/10 border border-gray-500/20 text-gray-400 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
+                  Before DiamondLinks
+                </div>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Occupancy Rate</span>
+                    <span className="text-white font-semibold">60%</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Organic Traffic</span>
+                    <span className="text-white font-semibold">Minimal</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Domain Rating</span>
+                    <span className="text-white font-semibold">7</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Referring Domains</span>
+                    <span className="text-white font-semibold">12</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Local Keywords</span>
+                    <span className="text-white font-semibold">Baseline</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3">
+                    <span className="text-gray-400">Backlinks</span>
+                    <span className="text-white font-semibold">Baseline</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* After */}
+              <div className="bg-gradient-to-br from-blue-600/10 to-indigo-600/10 border border-blue-500/20 rounded-2xl p-6 md:p-8">
+                <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
+                  After DiamondLinks
+                </div>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Occupancy Rate</span>
+                    <div className="text-right">
+                      <span className="text-white font-semibold">98%</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">+63%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Organic Traffic</span>
+                    <div className="text-right">
+                      <span className="text-white font-semibold">3x previous</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">+206%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Domain Rating</span>
+                    <div className="text-right">
+                      <span className="text-white font-semibold">10</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">+43%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Referring Domains</span>
+                    <div className="text-right">
+                      <span className="text-white font-semibold">80</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">+567%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-white/5">
+                    <span className="text-gray-400">Local Keywords</span>
+                    <div className="text-right">
+                      <span className="text-white font-semibold">Transactional</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">+62%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center py-3">
+                    <span className="text-gray-400">Backlinks</span>
+                    <div className="text-right">
+                      <span className="text-white font-semibold">+152</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">New</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Takeaway */}
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <div className="space-y-6 text-gray-600 text-base leading-relaxed">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                  </svg>
+                </div>
+                Key Takeaway
+              </h2>
+
+              {/* Highlight quote */}
+              <div className="border-l-4 border-blue-500 bg-blue-50 rounded-r-2xl py-5 px-6">
+                <p className="text-gray-800 font-medium text-lg leading-relaxed italic">
+                  &ldquo;The people who are going to become your tenants are already searching for apartments in your area. The only question is whether they find you or your competitor.&rdquo;
+                </p>
+              </div>
 
               <p>
                 The Abita View campaign is a clear demonstration of what happens when SEO strategy is built around a specific business outcome rather than vanity metrics. Every keyword we targeted, every backlink we built, every technical optimization we made was in service of one goal: filling apartments. The occupancy numbers prove that the approach worked.
               </p>
 
               <p>
-                For local businesses, especially those in real estate and property management, the lesson is straightforward. The people who are going to become your customers are already searching for what you offer. The question is whether they find you or your competitor. A focused local SEO campaign that targets transactional intent, builds geographic authority, and delivers a fast, mobile-friendly experience is not just a marketing expense. It is the most efficient path from empty units to signed leases.
+                For local businesses, especially those in real estate and property management, the lesson is straightforward. A focused local SEO campaign that targets transactional intent, builds geographic authority, and delivers a fast, mobile-friendly experience is not just a marketing expense — it is the most efficient path from empty units to signed leases.
               </p>
 
               <p>
@@ -283,25 +715,28 @@ export default function AbitaViewCaseStudyPage() {
             </div>
 
             {/* CTA Card */}
-            <div className="mt-16 bg-gray-50 rounded-2xl border border-gray-100 p-8 md:p-10 text-center">
-              <h3 className="text-gray-900 font-bold text-xl mb-2">
-                Ready to fill your vacancies?
-              </h3>
-              <p className="text-gray-500 text-sm mb-6 max-w-md mx-auto">
-                See how DiamondLinks can drive real business outcomes for your property with a data-driven local SEO strategy.
-              </p>
-              <Link
-                href="/free-seo-audit/"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/20"
-              >
-                Get a Free SEO Audit
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
+            <div className="mt-16 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-10 text-center relative overflow-hidden">
+              <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+              <div className="relative">
+                <h3 className="text-white font-bold text-xl mb-2">
+                  Ready to fill your vacancies?
+                </h3>
+                <p className="text-blue-100 text-sm mb-6 max-w-md mx-auto">
+                  Discover how DiamondLinks can drive real business outcomes for your property with a data-driven local SEO strategy.
+                </p>
+                <Link
+                  href="/free-seo-audit/"
+                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-6 py-3 rounded-lg font-bold text-sm hover:bg-blue-50 transition-colors shadow-lg shadow-black/10"
+                >
+                  Get Your Free SEO Audit
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
-        </article>
+        </section>
 
         <CtaBanner />
       </ScrollReveal>
