@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ScrollReveal from '@/components/ScrollReveal'
 import PageHero from '@/components/sections/PageHero'
 import CtaBanner from '@/components/sections/CtaBanner'
+import ContactForm from '@/components/ContactForm'
 import { company } from '@/data/company'
 
 export const metadata: Metadata = {
@@ -90,67 +91,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 md:p-10">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Send Us a Message</h2>
-              <p className="text-gray-500 text-sm mb-8">
-                Have a question or want to discuss your situation? Fill out the form below and we&apos;ll get back to you within 24 hours.
-              </p>
-
-              <form action="#" method="POST" className="space-y-5">
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="contact-name" className="block text-gray-900 text-sm font-semibold mb-1.5">
-                      Full Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="contact-name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 transition-colors"
-                      placeholder="John Smith"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="contact-email" className="block text-gray-900 text-sm font-semibold mb-1.5">
-                      Email Address <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="contact-email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 transition-colors"
-                      placeholder="john@company.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="contact-message" className="block text-gray-900 text-sm font-semibold mb-1.5">
-                    Message <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 transition-colors resize-y"
-                    placeholder="How can we help you?"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-base"
-                >
-                  Send Message
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
