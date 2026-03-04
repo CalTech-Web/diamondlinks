@@ -163,7 +163,7 @@ export default function SeoPage() {
         headline="Search Engine Optimization"
         gradientText="That Drives Real Growth"
         description="Organic search is the highest-ROI channel in digital marketing. DiamondLinks delivers strategic link building, keyword-driven content, and technical SEO that compounds month over month."
-        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
+        primaryCta={{ label: 'Get Free Analysis', href: '/free-seo-audit/' }}
         secondaryCta={{ label: 'See Our Process', href: '#process' }}
       />
 
@@ -314,7 +314,7 @@ export default function SeoPage() {
         headline="Ready to grow your organic traffic?"
         subtext="Get a free SEO audit and discover your biggest ranking opportunities. No commitment required."
         ctaLabel="Get Free SEO Audit"
-        ctaHref="/free-orm-scan/"
+        ctaHref="/free-seo-audit/"
       />
     </ScrollReveal>
     </>

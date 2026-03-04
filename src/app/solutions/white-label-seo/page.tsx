@@ -161,7 +161,7 @@ export default function WhiteLabelSeoPage() {
         headline="White Label SEO"
         gradientText="Services for Agencies"
         description="Deliver strategic link building, content, and technical SEO to your clients — without building an in-house team. DiamondLinks operates 100% behind the scenes."
-        primaryCta={{ label: 'Become a Partner', href: '/free-orm-scan/' }}
+        primaryCta={{ label: 'Become a Partner', href: '/request-a-quote/' }}
         secondaryCta={{ label: 'See How It Works', href: '#process' }}
       />
 
@@ -279,7 +279,7 @@ export default function WhiteLabelSeoPage() {
         headline="Ready to scale your SEO offering?"
         subtext="Join our white label program and deliver strategic SEO to your clients under your own brand."
         ctaLabel="Become a Partner"
-        ctaHref="/free-orm-scan/"
+        ctaHref="/request-a-quote/"
       />
     </ScrollReveal>
     </>

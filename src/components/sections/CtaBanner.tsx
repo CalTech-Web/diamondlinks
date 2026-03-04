@@ -7,9 +7,9 @@ interface CtaBannerProps {
 
 export default function CtaBanner({
   headline = 'Ready to take control of your search results?',
-  subtext = 'Get a free, confidential analysis of your online reputation. No commitment required.',
+  subtext = 'Get a free, confidential analysis of your search presence. No commitment required.',
   ctaLabel = 'Get Free Analysis',
-  ctaHref = '/free-orm-scan/',
+  ctaHref = '/free-seo-audit/',
 }: CtaBannerProps) {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 relative overflow-hidden">

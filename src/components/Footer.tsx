@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="relative border-b border-white/[0.06] py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-white font-bold text-lg mb-1">Ready to own your search results?</p>
+            <p className="text-white font-bold text-lg mb-1">Ready to grow your search visibility?</p>
             <p className="text-gray-500 text-sm">Get a free analysis. No commitment required.</p>
           </div>
           <div className="flex gap-3 flex-wrap flex-shrink-0">
@@ -35,16 +35,16 @@ export default function Footer() {
               504.233.4365
             </a>
             <a
-              href="/free-orm-scan/"
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20"
-            >
-              Free ORM Scan →
-            </a>
-            <a
               href="/free-seo-audit/"
               className="bg-indigo-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/20"
             >
               Free SEO Audit →
+            </a>
+            <a
+              href="/free-orm-scan/"
+              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20"
+            >
+              Free ORM Scan →
             </a>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Footer() {
               <Image src="/logo.png" alt="DiamondLinks" width={227} height={56} sizes="120px" className="h-7 w-auto brightness-0 invert" />
             </a>
             <p className="text-sm text-gray-500 mb-7 leading-relaxed max-w-xs">
-              DiamondLinks blends human expertise with AI to deliver SEO and ORM that actually work. Powered by people, perfected with AI.
+              DiamondLinks blends human expertise with AI to deliver white label SEO, ORM, and direct search marketing that actually work.
             </p>
             {/* Contact details */}
             <div className="space-y-2 text-sm">
@@ -89,10 +89,10 @@ export default function Footer() {
           <div>
             <p className="text-white text-xs font-semibold uppercase tracking-widest mb-5">Solutions</p>
             <ul className="space-y-3 text-sm">
-              <li><a href="/solutions/online-reputation-management/" className="text-gray-500 hover:text-white transition-colors">Online Reputation Management</a></li>
-              <li><a href="/solutions/seo/" className="text-gray-500 hover:text-white transition-colors">Search Engine Optimization</a></li>
-              <li><a href="/solutions/white-label-reputation-management/" className="text-gray-500 hover:text-white transition-colors">White Label ORM</a></li>
               <li><a href="/solutions/white-label-seo/" className="text-gray-500 hover:text-white transition-colors">White Label SEO</a></li>
+              <li><a href="/solutions/white-label-reputation-management/" className="text-gray-500 hover:text-white transition-colors">White Label ORM</a></li>
+              <li><a href="/solutions/seo/" className="text-gray-500 hover:text-white transition-colors">Search Engine Optimization</a></li>
+              <li><a href="/solutions/online-reputation-management/" className="text-gray-500 hover:text-white transition-colors">Online Reputation Management</a></li>
               <li><a href="/services/" className="text-gray-500 hover:text-white transition-colors">All Services</a></li>
             </ul>
           </div>

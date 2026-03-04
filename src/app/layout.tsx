@@ -9,26 +9,26 @@ const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://diamondlinks.com'),
-  title: "DiamondLinks | Online Reputation Management & SEO",
-  description: "DiamondLinks is a New Orleans-based ORM & SEO agency with 30+ years of combined expertise. We suppress negative content, amplify positive stories, and drive lasting SEO growth.",
+  title: "DiamondLinks | SEO Agency & White Label Partner",
+  description: "DiamondLinks is a New Orleans-based SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies nationwide.",
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://diamondlinks.com',
     siteName: 'DiamondLinks',
-    title: 'DiamondLinks | Online Reputation Management & SEO',
-    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency with 30+ years of combined expertise. We suppress negative content, amplify positive stories, and drive lasting SEO growth.',
+    title: 'DiamondLinks | SEO Agency & White Label Partner',
+    description: 'DiamondLinks is a New Orleans-based SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies nationwide.',
     images: [
       {
         url: '/logo.png',
-        alt: 'DiamondLinks — ORM & SEO Agency',
+        alt: 'DiamondLinks — SEO & White Label Agency',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DiamondLinks | Online Reputation Management & SEO',
-    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency with 30+ years of combined expertise. We suppress negative content, amplify positive stories, and drive lasting SEO growth.',
+    title: 'DiamondLinks | SEO Agency & White Label Partner',
+    description: 'DiamondLinks is a New Orleans-based SEO and white label agency with 30+ years of combined expertise. We deliver strategic SEO, reputation management, and white label services for agencies nationwide.',
     images: ['/logo.png'],
   },
 };
@@ -45,7 +45,7 @@ const organizationSchema = {
         "@type": "ImageObject",
         "url": "https://diamondlinks.com/icon.png",
       },
-      "description": "DiamondLinks is a New Orleans-based SEO & ORM agency founded in 2011. Powered by people and perfected with AI, we build true recovery, visibility, and reputation through proven SEO and ORM campaigns.",
+      "description": "DiamondLinks is a New Orleans-based SEO and white label agency founded in 2011. Powered by people and perfected with AI, we deliver strategic SEO, reputation management, and white label services for agencies nationwide.",
       "foundingDate": "2011",
       "telephone": "+15042334365",
       "address": {
@@ -70,22 +70,14 @@ const organizationSchema = {
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "ORM & SEO Services",
+        "name": "SEO & White Label Services",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Online Reputation Management",
-              "url": "https://diamondlinks.com/solutions/online-reputation-management/",
-            },
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Search Engine Optimization",
-              "url": "https://diamondlinks.com/solutions/seo/",
+              "name": "White Label SEO",
+              "url": "https://diamondlinks.com/solutions/white-label-seo/",
             },
           },
           {
@@ -100,8 +92,16 @@ const organizationSchema = {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "White Label SEO",
-              "url": "https://diamondlinks.com/solutions/white-label-seo/",
+              "name": "Search Engine Optimization",
+              "url": "https://diamondlinks.com/solutions/seo/",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Online Reputation Management",
+              "url": "https://diamondlinks.com/solutions/online-reputation-management/",
             },
           },
           {

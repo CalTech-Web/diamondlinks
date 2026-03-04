@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 const solutions = [
   {
-    href: '/solutions/online-reputation-management/',
-    shortName: 'ORM',
-    fullName: 'Online Reputation Management',
-    desc: 'Suppress negative content and own your first page.',
-    iconPath: 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z',
-    iconColor: 'text-blue-600',
-    iconBg: 'bg-blue-50 border-blue-100',
-    cta: 'Learn about ORM',
+    href: '/solutions/white-label-seo/',
+    shortName: 'White Label',
+    fullName: 'White Label SEO & ORM',
+    desc: 'Your behind-the-scenes SEO and ORM team. Scale your agency effortlessly.',
+    iconPath: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z',
+    iconColor: 'text-violet-600',
+    iconBg: 'bg-violet-50 border-violet-100',
+    cta: 'Get started',
   },
   {
     href: '/solutions/seo/',
@@ -25,14 +25,14 @@ const solutions = [
     cta: 'Learn about SEO',
   },
   {
-    href: '/solutions/white-label-reputation-management/',
-    shortName: 'White Label',
-    fullName: 'White Label ORM & SEO',
-    desc: 'Full-service partner for agencies, under your brand.',
-    iconPath: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z',
-    iconColor: 'text-violet-600',
-    iconBg: 'bg-violet-50 border-violet-100',
-    cta: 'Get started',
+    href: '/solutions/online-reputation-management/',
+    shortName: 'ORM',
+    fullName: 'Online Reputation Management',
+    desc: 'Suppress negative content and own your first page.',
+    iconPath: 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z',
+    iconColor: 'text-blue-600',
+    iconBg: 'bg-blue-50 border-blue-100',
+    cta: 'Learn about ORM',
   },
 ]
 
@@ -160,16 +160,16 @@ export default function Navbar() {
                       View All Services →
                     </a>
                     <a
-                      href="/free-orm-scan/"
-                      className="inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"
-                    >
-                      ORM Scan →
-                    </a>
-                    <a
                       href="/free-seo-audit/"
                       className="inline-flex items-center gap-1.5 bg-indigo-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-indigo-500 transition-colors shadow-sm shadow-indigo-600/25"
                     >
                       SEO Audit →
+                    </a>
+                    <a
+                      href="/free-orm-scan/"
+                      className="inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"
+                    >
+                      ORM Scan →
                     </a>
                   </div>
                 </div>

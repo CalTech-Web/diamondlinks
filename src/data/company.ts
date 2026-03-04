@@ -11,7 +11,7 @@ export const company = {
   founded: 2011,
   copyright: '© 2011–2026 DiamondLinks.com. All Rights Reserved.',
   tagline: 'Powered by People, Perfected with AI',
-  oneLiner: 'Our US-based team of experts builds true recovery, visibility, and reputation through powerful SEO and ORM campaigns — built on proven best practices and elevated by data-driven insights.',
+  oneLiner: 'Our US-based team delivers enterprise-grade SEO and reputation management — as your agency\'s white label partner or directly to your brand — built on proven best practices and elevated by data-driven insights.',
   founderName: 'Brandon Hopkins',
   founderTitle: 'Founder & CEO',
   presidentName: 'Hilary Spross',
@@ -64,7 +64,7 @@ export const testimonials = [
 ]
 
 export const differentiators = [
-  'ORM-only specialists — not a generalist agency doing reputation on the side',
+  'Full-service SEO and white label partner — trusted by agencies nationwide',
   'Custom strategy per client — no templates, no cookie-cutter playbooks',
   'Transparent monthly reporting — you always know exactly what\'s happening',
   'Results-first philosophy — we don\'t stop until the work is done',
@@ -74,8 +74,8 @@ export const differentiators = [
 
 export const process = [
   { phase: 'Week 1–2', title: 'Free Analysis', description: 'Full audit of your search results — every risk and opportunity mapped' },
-  { phase: 'Month 1', title: 'Strategy Delivered', description: 'Custom ORM & SEO roadmap, content plan, and link targets defined' },
+  { phase: 'Month 1', title: 'Strategy Delivered', description: 'Custom SEO & ORM roadmap, content plan, and link targets defined' },
   { phase: 'Month 2–3', title: 'Campaign Launches', description: 'Content goes live, link building begins, positive assets gain authority' },
-  { phase: 'Month 3–6', title: 'Rankings Move', description: 'Positive results climb, negative content loses page 1 ground' },
+  { phase: 'Month 3–6', title: 'Rankings Move', description: 'Rankings climb, organic traffic grows, positive results own page 1' },
   { phase: 'Ongoing', title: 'Page 1 Owned', description: 'Monthly reporting, continued maintenance, results protected' },
 ]

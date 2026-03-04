@@ -52,10 +52,10 @@ export default function StickyCtaBar() {
             </div>
             <div className="min-w-0 hidden sm:block">
               <p className="text-white text-sm font-semibold leading-none mb-0.5">
-                Take control of your online reputation
+                Grow your search visibility
               </p>
               <p className="text-gray-400 text-xs truncate">
-                Free analysis · No commitment · Proven results
+                Free SEO audit · White label partnerships · Proven results
               </p>
             </div>
           </div>
@@ -83,20 +83,20 @@ export default function StickyCtaBar() {
             </a>
 
             <a
-              href="/free-orm-scan/"
-              className="inline-flex items-center gap-1.5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/30 whitespace-nowrap"
+              href="/free-seo-audit/"
+              className="inline-flex items-center gap-1.5 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/30 whitespace-nowrap"
             >
-              ORM Scan
+              SEO Audit
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </a>
 
             <a
-              href="/free-seo-audit/"
-              className="hidden sm:inline-flex items-center gap-1.5 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/30 whitespace-nowrap"
+              href="/free-orm-scan/"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/30 whitespace-nowrap"
             >
-              SEO Audit
+              ORM Scan
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>

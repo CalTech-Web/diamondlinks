@@ -7,12 +7,12 @@ const ScrollReveal = dynamic(() => import('@/components/ScrollReveal'))
 const AnimatedCounter = dynamic(() => import('@/components/AnimatedCounter'))
 
 export const metadata: Metadata = {
-  title: "DiamondLinks | Online Reputation Management & SEO Agency",
-  description: "DiamondLinks is a New Orleans-based ORM & SEO agency. We suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.",
+  title: "DiamondLinks | SEO Agency & White Label Partner",
+  description: "DiamondLinks is a New Orleans-based SEO and white label agency. We deliver strategic SEO, reputation management, and white label services for agencies — so your brand dominates search.",
   alternates: { canonical: 'https://diamondlinks.com/' },
   openGraph: {
-    title: 'DiamondLinks | Online Reputation Management & SEO Agency',
-    description: 'DiamondLinks is a New Orleans-based ORM & SEO agency. We suppress negative content, amplify positive stories, and drive lasting SEO growth — so your brand owns its search results.',
+    title: 'DiamondLinks | SEO Agency & White Label Partner',
+    description: 'DiamondLinks is a New Orleans-based SEO and white label agency. We deliver strategic SEO, reputation management, and white label services for agencies — so your brand dominates search.',
     url: 'https://diamondlinks.com/',
   },
 }
@@ -93,10 +93,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "How do I know if I need ORM?",
+      "name": "How does your white label program work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Search your name or brand name right now. If you see negative news, bad reviews, competitor content, or anything you wouldn't want a client or employer to find, you need ORM. A damaging page-one result can cost more than the investment to fix it.",
+        "text": "We operate entirely behind the scenes as your agency's SEO and ORM team. All deliverables — reports, content, strategy docs — are branded with your logo and agency name. Your clients never know we exist. We offer agency-friendly pricing and a dedicated account manager to keep everything running smoothly.",
       },
     },
     {
@@ -154,7 +154,7 @@ export default function Home() {
             {/* Eyebrow pill */}
             <div className="hero-eyebrow-glow inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
-              SEO &amp; Online Reputation Management
+              White Label SEO &amp; Reputation Management
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
@@ -172,24 +172,24 @@ export default function Home() {
             </h1>
 
             <p className="text-gray-300 text-lg md:text-xl mb-10 leading-relaxed max-w-lg">
-              Our US-based team builds true recovery, visibility, and reputation through powerful SEO and ORM campaigns — built on proven best practices and elevated by data-driven insights.
+              Our US-based team delivers enterprise-grade SEO and reputation management — as your agency&apos;s behind-the-scenes partner or direct to your brand. Built on proven best practices and elevated by data-driven insights.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-4">
               <a
-                href="/free-orm-scan/"
+                href="/request-a-quote/"
                 className="hero-cta-shimmer inline-flex items-center gap-2.5 bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/35 text-base"
               >
-                Get Free Analysis
+                Get Started
                 <svg className="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} style={{ width: 18, height: 18 }}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </a>
               <a
-                href="/solutions/online-reputation-management/"
+                href="/solutions/white-label-seo/"
                 className="bg-white/8 border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/15 transition-colors text-base"
               >
-                See Our Services
+                White Label Solutions
               </a>
             </div>
 
@@ -249,7 +249,7 @@ export default function Home() {
                   <span className="text-gray-600 text-xs">·</span>
                   <span className="text-gray-400 text-xs">Verified clients</span>
                 </div>
-                <p className="text-gray-500 text-xs">Trusted by executives, attorneys &amp; agencies nationwide</p>
+                <p className="text-gray-500 text-xs">Trusted by agencies, executives &amp; brands nationwide</p>
               </div>
             </div>
 
@@ -262,7 +262,7 @@ export default function Home() {
                   </svg>
                   <AnimatedCounter end={30} suffix="+" className="text-2xl font-bold text-white leading-none" />
                 </div>
-                <div className="text-xs text-gray-400 uppercase tracking-wide leading-snug">Yrs ORM Expertise</div>
+                <div className="text-xs text-gray-400 uppercase tracking-wide leading-snug">Yrs SEO &amp; ORM Expertise</div>
               </div>
               <div className="flex flex-col gap-1.5">
                 <div className="flex items-center gap-1.5 mb-0.5">
@@ -335,7 +335,7 @@ export default function Home() {
               {/* Footer note */}
               <div className="mt-5 pt-4 border-t border-white/5 flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
-                <p className="text-gray-500 text-xs">Negative results suppressed, positive content dominates page 1</p>
+                <p className="text-gray-500 text-xs">Strategic SEO + ORM delivering page 1 dominance</p>
               </div>
             </div>
 
@@ -346,7 +346,7 @@ export default function Home() {
               </svg>
               <div>
                 <p className="text-red-400 text-xs font-semibold uppercase tracking-wide mb-0.5">Before DiamondLinks</p>
-                <p className="text-gray-500 text-xs leading-relaxed">Negative news article, bad review site, and competitor content dominated your first page.</p>
+                <p className="text-gray-500 text-xs leading-relaxed">Weak search presence, missing brand assets, and competitor content dominated your first page.</p>
               </div>
             </div>
           </div>
@@ -359,7 +359,7 @@ export default function Home() {
 
           {/* Eyebrow label */}
           <p className="text-center text-[10px] text-gray-400 font-semibold uppercase tracking-[0.18em] mb-8">
-            Trusted by executives, attorneys &amp; agencies nationwide
+            Trusted by agencies, executives &amp; brands nationwide
           </p>
 
           {/* 4-card grid */}
@@ -425,7 +425,7 @@ export default function Home() {
       {/* Platform Presence Marquee */}
       <div className="bg-white border-b border-gray-100 py-5 overflow-hidden">
         <p className="text-center text-[10px] text-gray-400 font-semibold uppercase tracking-widest mb-4 px-6">
-          Protecting your reputation across every platform that matters
+          Building your search presence across every platform that matters
         </p>
         <div className="relative overflow-hidden">
           {/* Left fade */}
@@ -481,10 +481,10 @@ export default function Home() {
               The Problem
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              One Bad Search Result Is Costing You Business Right Now
+              Your Search Presence Is Your First Impression
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Before any meeting, any call, any deal, people Google you. What they find in those first few results determines whether they trust you enough to reach out.
+              Before any meeting, any call, any deal, people Google you. What they find in those first few results determines whether they trust you enough to reach out — or move on.
             </p>
           </div>
 
@@ -508,7 +508,7 @@ export default function Home() {
 
               {/* Label */}
               <div className="px-6 pt-5 pb-2 flex items-center gap-3">
-                <span className="text-xs font-semibold text-red-500 uppercase tracking-widest whitespace-nowrap">Without ORM: what prospects see</span>
+                <span className="text-xs font-semibold text-red-500 uppercase tracking-widest whitespace-nowrap">Without a Strategy: what prospects see</span>
                 <div className="flex-1 h-px bg-red-100" />
               </div>
 
@@ -613,10 +613,10 @@ export default function Home() {
               {/* Right: CTAs */}
               <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                 <a
-                  href="/free-orm-scan/"
+                  href="/free-seo-audit/"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/20 text-sm whitespace-nowrap"
                 >
-                  Get Free Reputation Analysis
+                  Get a Free SEO Analysis
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
@@ -671,7 +671,7 @@ export default function Home() {
             {/* Key differentiators */}
             <ul className="space-y-3.5 mb-10">
               {[
-                { text: "ORM-only specialists, not a generalist agency doing reputation on the side", icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z", color: "text-blue-600 bg-blue-50 border-blue-100" },
+                { text: "Full-service SEO and white label partner — not a generalist agency doing search on the side", icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z", color: "text-blue-600 bg-blue-50 border-blue-100" },
                 { text: "Custom strategy per client, no templates, no cookie-cutter playbooks", icon: "M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z", color: "text-indigo-600 bg-indigo-50 border-indigo-100" },
                 { text: "Transparent monthly reporting, you always know exactly what's happening", icon: "M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z", color: "text-violet-600 bg-violet-50 border-violet-100" },
                 { text: "We work until it's fixed — commitment to results, not just effort", icon: "M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.563.563 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z", color: "text-emerald-600 bg-emerald-50 border-emerald-100" },
@@ -694,7 +694,7 @@ export default function Home() {
                 { label: "New Orleans, LA", color: "bg-blue-50 border-blue-100 text-blue-700" },
                 { label: "5.0 ★ Rated", color: "bg-yellow-50 border-yellow-100 text-yellow-700" },
                 { label: "Nationwide Clients", color: "bg-indigo-50 border-indigo-100 text-indigo-700" },
-                { label: "White-Label Ready", color: "bg-violet-50 border-violet-100 text-violet-700" },
+                { label: "White-Label Partner", color: "bg-violet-50 border-violet-100 text-violet-700" },
               ].map((chip) => (
                 <span
                   key={chip.label}
@@ -782,7 +782,7 @@ export default function Home() {
               {/* Bottom CTA */}
               <div className="mt-8 pt-6 border-t border-white/10">
                 <a
-                  href="/free-orm-scan/"
+                  href="/request-a-quote/"
                   className="flex items-center justify-center gap-2 w-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-5 py-3 rounded-xl transition-colors shadow-lg shadow-blue-600/25"
                 >
                   Get Your Free Analysis →
@@ -848,7 +848,7 @@ export default function Home() {
                 {
                   stat: "30+",
                   unit: " yrs",
-                  label: "ORM & SEO Expertise",
+                  label: "SEO & ORM Expertise",
                   sub: "Combined years of experience, exclusively focused on reputation and search",
                   color: "from-indigo-400 to-indigo-300",
                   border: "border-indigo-500/20",
@@ -903,10 +903,10 @@ export default function Home() {
               <div className="flex-1">
                 {[
                   { phase: "Week 1–2", title: "Free Analysis", desc: "Full audit of your search results, every risk and opportunity mapped", color: "bg-blue-500", textColor: "text-blue-400", last: false },
-                  { phase: "Month 1", title: "Strategy Delivered", desc: "Custom ORM & SEO roadmap, content plan, and link targets defined", color: "bg-indigo-500", textColor: "text-indigo-400", last: false },
+                  { phase: "Month 1", title: "Strategy Delivered", desc: "Custom SEO & ORM roadmap, content plan, and link targets defined", color: "bg-indigo-500", textColor: "text-indigo-400", last: false },
                   { phase: "Month 2–3", title: "Campaign Launches", desc: "Content goes live, link building begins, positive assets gain authority", color: "bg-violet-500", textColor: "text-violet-400", last: false },
-                  { phase: "Month 3–6", title: "Rankings Move", desc: "Positive results climb, negative content loses page 1 ground", color: "bg-emerald-500", textColor: "text-emerald-400", last: false },
-                  { phase: "Ongoing", title: "Page 1 Owned", desc: "Monthly reporting, continued maintenance, results protected", color: "bg-emerald-400", textColor: "text-emerald-300", last: true },
+                  { phase: "Month 3–6", title: "Rankings Move", desc: "Rankings climb, organic traffic grows, page 1 ownership strengthens", color: "bg-emerald-500", textColor: "text-emerald-400", last: false },
+                  { phase: "Ongoing", title: "Page 1 Owned", desc: "Monthly reporting, continued optimization, results compounding", color: "bg-emerald-400", textColor: "text-emerald-300", last: true },
                 ].map((step) => (
                   <div key={step.phase} className="flex gap-4">
                     <div className="flex flex-col items-center flex-shrink-0">
@@ -924,7 +924,7 @@ export default function Home() {
 
               <div className="mt-7 pt-5 border-t border-white/10">
                 <a
-                  href="/free-orm-scan/"
+                  href="/request-a-quote/"
                   className="flex items-center justify-center gap-2 w-full bg-blue-600 text-white text-sm font-bold px-5 py-3 rounded-xl hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/25"
                 >
                   Start Your Campaign →
@@ -944,8 +944,8 @@ export default function Home() {
             <p className="text-gray-500 mt-4 max-w-xl mx-auto">From crisis ORM to long-term SEO growth, measurable results that protect and elevate your brand.</p>
           </div>
 
-          {/* Featured ORM card — full width */}
-          <div className="relative bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 rounded-3xl p-10 md:p-12 overflow-hidden mb-6 shadow-2xl shadow-blue-600/25">
+          {/* Featured White Label card — full width */}
+          <div className="relative bg-gradient-to-br from-violet-700 via-purple-600 to-indigo-700 rounded-3xl p-10 md:p-12 overflow-hidden mb-6 shadow-2xl shadow-violet-600/25">
             {/* Grid texture */}
             <div
               className="absolute inset-0 opacity-[0.07]"
@@ -956,7 +956,7 @@ export default function Home() {
               }}
             />
             {/* Glow orbs */}
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-violet-400/20 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-indigo-500/25 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative md:flex md:items-center md:gap-14">
@@ -966,27 +966,27 @@ export default function Home() {
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block" />
                   Core Service
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Online Reputation Management</h3>
-                <p className="text-blue-100 text-lg leading-relaxed mb-8 max-w-lg">
-                  Stop letting unfair search results define your brand. We suppress damaging content, amplify positive stories, and ensure your first page reflects the real you.
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">White Label SEO &amp; ORM for Agencies</h3>
+                <p className="text-violet-100 text-lg leading-relaxed mb-8 max-w-lg">
+                  Scale your agency with a behind-the-scenes SEO and ORM team that delivers enterprise-grade results under your brand — invisible to your clients, indispensable to your growth.
                 </p>
                 <a
-                  href="/solutions/online-reputation-management/"
-                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-7 py-3.5 rounded-xl font-bold hover:bg-blue-50 transition-colors text-sm shadow-lg shadow-black/10"
+                  href="/solutions/white-label-seo/"
+                  className="inline-flex items-center gap-2 bg-white text-violet-700 px-7 py-3.5 rounded-xl font-bold hover:bg-violet-50 transition-colors text-sm shadow-lg shadow-black/10"
                 >
-                  Learn About ORM →
+                  Explore White Label →
                 </a>
               </div>
 
               {/* Right: feature chips grid */}
               <div className="md:w-72 flex-shrink-0 grid grid-cols-2 gap-3">
                 {[
-                  "Negative content suppression",
-                  "Positive asset amplification",
-                  "Review management",
-                  "Crisis ORM response",
-                  "Brand monitoring",
-                  "Monthly reporting",
+                  "100% invisible to your clients",
+                  "Branded reports & deliverables",
+                  "Agency-friendly pricing",
+                  "Dedicated account manager",
+                  "Full-stack SEO + ORM",
+                  "Scale from 1 to 100+ clients",
                 ].map((item) => (
                   <div
                     key={item}
@@ -995,7 +995,7 @@ export default function Home() {
                     <svg className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-blue-100 text-xs font-medium leading-snug">{item}</span>
+                    <span className="text-violet-100 text-xs font-medium leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
@@ -1046,41 +1046,41 @@ export default function Home() {
               </div>
             </div>
 
-            {/* White Label */}
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-violet-100 transition-all group overflow-hidden flex flex-col">
+            {/* ORM */}
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-blue-100 transition-all group overflow-hidden flex flex-col">
               {/* Top accent line */}
-              <div className="h-1 w-full bg-gradient-to-r from-violet-500 to-violet-400 flex-shrink-0" />
+              <div className="h-1 w-full bg-gradient-to-r from-blue-500 to-blue-400 flex-shrink-0" />
               <div className="p-8 flex flex-col flex-1">
-                <div className="w-12 h-12 rounded-xl bg-violet-50 border border-violet-100 flex items-center justify-center mb-5 group-hover:bg-violet-100 transition-colors">
-                  <svg className="w-6 h-6 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-5 group-hover:bg-blue-100 transition-colors">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">White Label ORM &amp; SEO</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Online Reputation Management</h3>
                 <p className="text-gray-600 mb-5 leading-relaxed">
-                  We work behind the scenes so your agency can deliver world-class reputation
-                  and SEO results, at any scale, under your brand.
+                  Stop letting unfair search results define your brand. We suppress damaging content,
+                  amplify positive stories, and ensure your first page reflects the real you.
                 </p>
                 {/* Key outcome chip */}
-                <div className="inline-flex items-center gap-1.5 bg-violet-50 border border-violet-100 text-violet-700 text-xs font-semibold px-3 py-1.5 rounded-lg mb-6 w-fit">
+                <div className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-lg mb-6 w-fit">
                   <svg className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                   </svg>
-                  100% under your brand, invisible to your clients
+                  Negative content suppressed off page 1
                 </div>
                 <ul className="space-y-2.5 mb-7 flex-1">
-                  {["Fully white-labeled deliverables", "Agency-friendly pricing", "Dedicated account support", "Scale from one client to hundreds"].map((item) => (
+                  {["Negative content suppression", "Positive asset amplification", "Review management", "Crisis ORM response"].map((item) => (
                     <li key={item} className="flex items-center gap-2.5 text-sm text-gray-600">
-                      <span className="w-1.5 h-1.5 rounded-full bg-violet-400 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <a
-                  href="/solutions/white-label-reputation-management/"
-                  className="inline-flex items-center justify-center gap-2 text-sm font-bold text-violet-600 border border-violet-200 bg-violet-50/60 px-5 py-2.5 rounded-lg hover:bg-violet-100 hover:border-violet-300 transition-colors"
+                  href="/solutions/online-reputation-management/"
+                  className="inline-flex items-center justify-center gap-2 text-sm font-bold text-blue-600 border border-blue-200 bg-blue-50/60 px-5 py-2.5 rounded-lg hover:bg-blue-100 hover:border-blue-300 transition-colors"
                 >
-                  Explore White Label
+                  Learn About ORM
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
@@ -2151,7 +2151,7 @@ export default function Home() {
 
                 {/* Social proof micro-line */}
                 <p className="text-center text-gray-400 text-[11px] mt-4 leading-snug">
-                  Trusted by executives, attorneys &amp; agencies nationwide
+                  Trusted by agencies, executives &amp; brands nationwide
                 </p>
               </div>
             </div>
@@ -2164,8 +2164,8 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-2">FAQ</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common Questions About ORM &amp; SEO</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">Clear answers to the questions every brand asks before taking control of their online presence.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Common Questions About SEO, White Label &amp; ORM</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Clear answers to the questions every brand and agency asks before taking control of their search presence.</p>
           </div>
 
           <FaqAccordion />
@@ -2189,7 +2189,7 @@ export default function Home() {
                   Still have questions? Let&apos;s talk.
                 </p>
                 <p className="text-gray-500 text-sm max-w-sm">
-                  Our ORM specialists are happy to walk through your situation and tell you exactly how we can help. No commitment required.
+                  Our team is happy to walk through your situation and tell you exactly how we can help. No commitment required.
                 </p>
               </div>
 
