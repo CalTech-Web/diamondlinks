@@ -299,8 +299,8 @@ export default function FireworksAiCaseStudyPage() {
 
               {/* Traffic Value */}
               <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-rose-50 border border-rose-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-6 h-6 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0 1 16.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 0 1-4.52 1.522 6.003 6.003 0 0 1-4.52-1.522" />
                   </svg>
                 </div>
@@ -308,7 +308,7 @@ export default function FireworksAiCaseStudyPage() {
                 <p
                   className="text-3xl font-bold"
                   style={{
-                    background: 'linear-gradient(135deg, #e11d48 0%, #fb7185 100%)',
+                    background: 'linear-gradient(135deg, #475569 0%, #64748b 100%)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                     backgroundClip: 'text',
@@ -346,7 +346,7 @@ export default function FireworksAiCaseStudyPage() {
                 {/* SVG Chart — based on Fireworks.ai growth data from Nov 2023 to Jul 2024 */}
                 {/* Traffic: 416 -> ~600 -> ~900 -> ~1500 -> ~2200 -> ~3000 -> ~3800 -> ~4200 -> ~4500 */}
                 {/* Referring Domains: 286 -> ~310 -> ~350 -> ~400 -> ~460 -> ~530 -> ~600 -> ~650 -> ~676 */}
-                <svg viewBox="0 0 800 280" className="w-full h-auto" role="img" aria-label="Traffic growth chart showing organic traffic rising from 416 to 4,500 monthly visits between November 2023 and July 2024">
+                <svg viewBox="0 0 830 280" className="w-full h-auto" role="img" aria-label="Traffic growth chart showing organic traffic rising from 416 to 4,500 monthly visits between November 2023 and July 2024">
                   {/* Grid lines */}
                   <line x1="60" y1="30" x2="60" y2="240" stroke="#e5e7eb" strokeWidth="1" />
                   <line x1="60" y1="240" x2="780" y2="240" stroke="#e5e7eb" strokeWidth="1" />
@@ -449,7 +449,7 @@ export default function FireworksAiCaseStudyPage() {
         </section>
 
         {/* About the Client */}
-        <section className="py-16 px-6 bg-white">
+        <section className="py-10 px-6 bg-white">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-start gap-4 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8">
               <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">

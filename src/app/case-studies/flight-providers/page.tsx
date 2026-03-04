@@ -338,7 +338,7 @@ export default function FlightProvidersCaseStudyPage() {
               </div>
               <div className="p-6 md:p-8">
                 {/* SVG Chart — recreated from the PDF trend data showing Aug 2024 to Jan 2025 */}
-                <svg viewBox="0 0 800 280" className="w-full h-auto" role="img" aria-label="Growth chart showing referring domains rising from 64 to 139 and organic traffic increasing by 300% between August 2024 and January 2025">
+                <svg viewBox="0 0 830 280" className="w-full h-auto" role="img" aria-label="Growth chart showing referring domains rising from 64 to 139 and organic traffic increasing by 300% between August 2024 and January 2025">
                   {/* Grid lines */}
                   <line x1="60" y1="30" x2="60" y2="240" stroke="#e5e7eb" strokeWidth="1" />
                   <line x1="60" y1="240" x2="780" y2="240" stroke="#e5e7eb" strokeWidth="1" />
@@ -350,11 +350,11 @@ export default function FlightProvidersCaseStudyPage() {
 
                   {/* Y-axis left labels — Referring Domains */}
                   <text x="50" y="244" textAnchor="end" className="text-[11px]" fill="#9ca3af">0</text>
-                  <text x="50" y="198" textAnchor="end" className="text-[11px]" fill="#9ca3af">10</text>
-                  <text x="50" y="156" textAnchor="end" className="text-[11px]" fill="#9ca3af">20</text>
-                  <text x="50" y="114" textAnchor="end" className="text-[11px]" fill="#9ca3af">30</text>
-                  <text x="50" y="72" textAnchor="end" className="text-[11px]" fill="#9ca3af">40</text>
-                  <text x="50" y="34" textAnchor="end" className="text-[11px]" fill="#9ca3af">50</text>
+                  <text x="50" y="198" textAnchor="end" className="text-[11px]" fill="#9ca3af">30</text>
+                  <text x="50" y="156" textAnchor="end" className="text-[11px]" fill="#9ca3af">60</text>
+                  <text x="50" y="114" textAnchor="end" className="text-[11px]" fill="#9ca3af">90</text>
+                  <text x="50" y="72" textAnchor="end" className="text-[11px]" fill="#9ca3af">120</text>
+                  <text x="50" y="34" textAnchor="end" className="text-[11px]" fill="#9ca3af">150</text>
 
                   {/* Y-axis right labels — Avg. Organic Traffic */}
                   <text x="790" y="244" textAnchor="start" className="text-[11px]" fill="#9ca3af">0</text>
@@ -437,7 +437,7 @@ export default function FlightProvidersCaseStudyPage() {
         </section>
 
         {/* About the Client */}
-        <section className="py-16 px-6 bg-white">
+        <section className="py-10 px-6 bg-white">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-start gap-4 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8">
               <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">

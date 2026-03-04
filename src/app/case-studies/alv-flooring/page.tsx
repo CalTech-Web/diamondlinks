@@ -421,7 +421,7 @@ export default function AlvFlooringCaseStudyPage() {
         </section>
 
         {/* About the Client */}
-        <section className="py-16 px-6 bg-white">
+        <section className="py-10 px-6 bg-white">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-start gap-4 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8">
               <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">

@@ -338,7 +338,7 @@ export default function AbitaViewCaseStudyPage() {
               </div>
               <div className="p-6 md:p-8">
                 {/* SVG Chart — recreated from the Ahrefs data in the PDF */}
-                <svg viewBox="0 0 800 280" className="w-full h-auto" role="img" aria-label="Traffic and referring domains growth chart showing steady increases from March 2024 through January 2025">
+                <svg viewBox="0 0 830 280" className="w-full h-auto" role="img" aria-label="Traffic and referring domains growth chart showing steady increases from March 2024 through January 2025">
                   {/* Grid lines */}
                   <line x1="60" y1="30" x2="60" y2="240" stroke="#e5e7eb" strokeWidth="1" />
                   <line x1="60" y1="240" x2="780" y2="240" stroke="#e5e7eb" strokeWidth="1" />
@@ -436,7 +436,7 @@ export default function AbitaViewCaseStudyPage() {
         </section>
 
         {/* About the Client */}
-        <section className="py-16 px-6 bg-white">
+        <section className="py-10 px-6 bg-white">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-start gap-4 bg-blue-50 border border-blue-100 rounded-2xl p-6 md:p-8">
               <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
@@ -637,7 +637,7 @@ export default function AbitaViewCaseStudyPage() {
                     <span className="text-gray-400">Occupancy Rate</span>
                     <div className="text-right">
                       <span className="text-white font-semibold">98%</span>
-                      <span className="ml-2 text-emerald-400 text-sm font-medium">+63%</span>
+                      <span className="ml-2 text-emerald-400 text-sm font-medium">+38pp</span>
                     </div>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-white/5">
