@@ -475,9 +475,9 @@ export const serviceSubPages: SubPageData[] = [
     ],
     faqs: [
       { q: 'What makes your backlinks "premium"?', a: 'Every link we build is editorially placed on a real, authoritative website with genuine traffic. We never use PBNs, link farms, or paid directory submissions. Each placement is manually vetted for quality and relevance.' },
-      { q: 'How many backlinks will I receive per month?', a: 'Quantity depends on your package, but we prioritize quality over volume. A single link from a DA 70+ publication delivers more ranking power than dozens of low-quality links.' },
+      { q: 'How many backlinks will I receive per month?', a: 'Quantity depends on your package, but we always prioritize quality and naturalness over volume. We target sites that are genuinely relevant to your industry and intentionally vary DR/DA levels across placements — mirroring how links are earned organically. This diversity signals credibility to Google rather than a manufactured pattern.' },
       { q: 'Are these links safe from Google penalties?', a: 'Yes. Our white-hat approach mirrors how links are naturally earned — through great content placed on real publications. These are the links Google\'s algorithm was designed to reward.' },
-      { q: 'How long until I see ranking improvements from new links?', a: 'Most clients see measurable ranking movement within 90–120 days of consistent link acquisition. Competitive keywords may take longer, but the authority compounds over time.' },
+      { q: 'How long until I see ranking improvements from new links?', a: 'Expect to see measurable ranking movement after 90–120 days of consistent link acquisition. Domain authority builds gradually, and the compounding effect of a clean, growing link profile becomes most visible in months three and four.' },
     ],
   },
   {
