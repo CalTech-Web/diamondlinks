@@ -57,7 +57,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-gray-900 font-bold text-base mb-1">Phone</h3>
               <p className="text-blue-600 font-semibold text-sm group-hover:text-blue-500 transition-colors">{company.phone}</p>
-              <p className="text-gray-400 text-xs mt-1">Mon-Fri, 9am-5pm CST</p>
+              <p className="text-gray-400 text-xs mt-1">Mon–Fri, 9am–5pm EST / 8am–4pm CST</p>
             </a>
 
             {/* Address */}
