@@ -152,22 +152,16 @@ export default function Navbar() {
                     </svg>
                     <span className="text-xs">Free analysis tools — no signup required</span>
                   </div>
-                  <div className="flex items-center gap-2 flex-shrink-0">
-                    <a
-                      href="/services/"
-                      className="inline-flex items-center gap-1.5 text-gray-500 text-xs font-semibold hover:text-blue-600 transition-colors"
-                    >
-                      View All Services →
-                    </a>
+                  <div className="flex items-center gap-3 flex-shrink-0">
                     <a
                       href="/free-seo-audit/"
-                      className="inline-flex items-center gap-1.5 bg-indigo-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-indigo-500 transition-colors shadow-sm shadow-indigo-600/25"
+                      className="inline-flex items-center gap-1.5 bg-indigo-600 text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-indigo-500 transition-colors shadow-sm shadow-indigo-600/25"
                     >
                       SEO Audit →
                     </a>
                     <a
                       href="/free-orm-scan/"
-                      className="inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"
+                      className="inline-flex items-center gap-1.5 bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors shadow-sm shadow-blue-600/25"
                     >
                       ORM Scan →
                     </a>
