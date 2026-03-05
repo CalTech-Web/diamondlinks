@@ -101,7 +101,7 @@ export default function ServicesPage() {
         headline="The Complete SEO"
         gradientText="Solution"
         description="Comprehensive SEO and reputation management services powered by human expertise and refined with AI. From technical audits to content strategy, we cover every dimension of organic growth."
-        primaryCta={{ label: 'Get Free Analysis', href: '/free-seo-audit/' }}
+        primaryCta={{ label: 'Get Free Audit', href: '/free-seo-audit/' }}
         secondaryCta={{ label: 'Talk to an Expert', href: '/contact/' }}
         dark={true}
       />

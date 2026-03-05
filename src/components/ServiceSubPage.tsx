@@ -69,7 +69,7 @@ export default function ServiceSubPage({ data }: { data: SubPageData }) {
         headline={data.headline}
         gradientText={data.gradientText}
         description={data.description}
-        primaryCta={{ label: 'Get Free Analysis', href: '/free-orm-scan/' }}
+        primaryCta={data.category === 'orm' ? { label: 'Get Free Analysis', href: '/free-orm-scan/' } : { label: 'Get Free Audit', href: '/free-seo-audit/' }}
         secondaryCta={{ label: 'Call 504.233.4365', href: 'tel:504-233-4365' }}
         dark
       />
