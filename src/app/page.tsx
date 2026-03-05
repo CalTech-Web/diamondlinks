@@ -957,7 +957,7 @@ export default function Home() {
             <div className="absolute -top-24 -right-24 w-72 h-72 bg-violet-400/20 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-indigo-500/25 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="relative md:flex md:items-center md:gap-14">
+            <div className="relative md:flex md:items-center md:gap-8">
               {/* Left: copy */}
               <div className="md:flex-1 mb-10 md:mb-0">
                 <div className="inline-flex items-center gap-2 bg-white/15 border border-white/20 text-white text-xs font-semibold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6">
