@@ -1,15 +1,14 @@
 # DiamondLinks
 
-Redesign of [DiamondLinks.com](https://diamondlinks.com) — an ORM & SEO agency based in New Orleans, LA.
+Next.js 16, React 19, TypeScript, Tailwind CSS v4
+Deployed on Vercel: https://diamondlinks.vercel.app
+Production: https://diamondlinks.com
+Local dev: http://localhost:3004
 
-**Stack:** Next.js 16, React 19, Tailwind CSS v4, TypeScript
+## Run Agents
 
-**Local:** http://localhost:3004
+WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/visual-enhancement-agent MODEL="sonnet" MAX_LOOPS=5 bash ~/Projects/claude-lab/ENGINE/run.sh
 
-Run `npm install` then `npm run dev` to start.
+WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/pagespeed-agent MODEL="sonnet" MAX_LOOPS=5 bash ~/Projects/claude-lab/ENGINE/run.sh
 
-## Agents
-
-WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/visual-enhancement-agent MODEL="sonnet" MAX_LOOPS=15 bash ~/Projects/claude-lab/ENGINE/run.sh
-
-WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/seo-agent MODEL="sonnet" MAX_LOOPS=15 bash ~/Projects/claude-lab/ENGINE/run.sh
+WORK=/Users/brandonhopkins/Projects/diamondlinks/agents/seo-agent MODEL="sonnet" MAX_LOOPS=5 bash ~/Projects/claude-lab/ENGINE/run.sh
